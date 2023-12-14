@@ -4,16 +4,33 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiMenu3Line } from "react-icons/ri";
 import { dataHeader } from "./Header.data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MotionTransition } from "../MotionTransition/";
 import ThemeSwitcherBtn from "../ThemeSwitcher";
 
 export function Header() {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      setIsScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <MotionTransition>
-      <nav className="flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8 md:fixed md:w-full md:z-50 md:left-0 md:right-0">
+      <nav
+        className={`flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8 md:fixed md:w-full md:z-50 md:left-0 md:right-0 ${
+          isScrolled ? "bg-gray-100 md:py-2" : ""
+        }`}
+      >
         <Link href="/" className="flex items-center">
           <Image
             src="/assets/logo2.png"
