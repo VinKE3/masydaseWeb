@@ -15,9 +15,9 @@ export function ChooseYourCards() {
       <BackgroundRadialRight />
       <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
         <Reveal>
-          <h2 className="text-5xl font-semibold">
+          <h2 className="text-5xl font-semibold text-gray-600 dark:text-white">
             Elige el sistema Coorporativo
-            <span className="block degradedBlue bg-blueLight">
+            <span className="block degradedBlue dark:bg-blueLight text-cyan-600">
               que se adapte mejor a tus necesidades
             </span>
           </h2>

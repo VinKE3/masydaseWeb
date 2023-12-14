@@ -15,7 +15,7 @@ export function Footer() {
             alt="Logo Bank"
           />
           <Reveal>
-            <p className="mt-5 text-primaryDark max-w-[250px]">
+            <p className="mt-5 text-gray-500 dark:text-primaryDark max-w-[250px]">
               Transformando ideas en soluciones agiles de confianza
             </p>
           </Reveal>
@@ -29,7 +29,7 @@ export function Footer() {
               <Link
                 key={id}
                 href={link}
-                className="block mt-4 text-primaryDark hover:text-white"
+                className="block mt-4 text-gray-500 hover:text-gray-700 dark:text-primaryDark dark:hover:text-white"
               >
                 <Reveal>{name}</Reveal>
               </Link>

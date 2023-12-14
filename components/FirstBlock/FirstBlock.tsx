@@ -23,7 +23,7 @@ export function FirstBlock() {
             </h1>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 dark:text-white text-gray-600">
+            <p className="max-w-md mt-10 dark:text-primaryDark text-gray-600">
               Nuestro equipo de expertos en tecnología y finanzas, te ayudarán a
               transformar tu negocio y a mejorar tus procesos de facturación
               para que puedas enfocarte en lo que realmente importa.
@@ -32,7 +32,7 @@ export function FirstBlock() {
           <Reveal>
             <div className="my-8">
               <Link
-                href="#contacto"
+                href="#contact"
                 className="px-4 py-3 rounded-md text-white bg-cyan-600 hover:bg-cyan-700 dark:bg-blueRadial"
               >
                 Contactanos

@@ -13,6 +13,8 @@ const config: Config = {
         primary: "#fff",
         primaryDark: "rgba(255,255,255, 0.7);",
         secondary: "#6DE4E8",
+        gradient:
+          "linear-gradient(90deg, #6de4e8 0%, rgba(0, 178, 218, 0.6) 95.83%)",
       },
       backgroundImage: {
         radialBlack:
