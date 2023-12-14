@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <MotionTransition>
-      <nav className="flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8">
+      <nav className="flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8 md:fixed md:w-full md:z-50 md:left-0 md:right-0">
         <Link href="/" className="flex items-center">
           <Image
             src="/assets/logo2.png"

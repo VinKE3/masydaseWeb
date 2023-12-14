@@ -11,12 +11,15 @@ export function CounterData() {
           <div key={id} className="py-5 text-2xl text-center md:text-left">
             +
             <CountUp
+              className="text-gray-600 dark:text-white"
               start={startNumber}
               end={endNumber}
               duration={1.5}
               enableScrollSpy
             />{" "}
-            <span className="degradedBlue bg-blueLight">{text}</span>
+            <span className="degradedBlue dark:bg-blueLight text-cyan-600">
+              {text}
+            </span>
           </div>
         ))}
       </div>
