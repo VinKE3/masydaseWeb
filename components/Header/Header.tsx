@@ -26,7 +26,7 @@ export function Header() {
     <MotionTransition>
       <nav
         className={`flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8 md:fixed md:w-full md:z-50 md:left-0 md:right-0 ${
-          isScrolled ? "bg-gray-100 dark:bg-primaryDark md:py-1" : ""
+          isScrolled ? "bg-slate-50 dark:bg-black md:py-2" : ""
         }`}
       >
         <Link href="/" className="flex items-center">
