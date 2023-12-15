@@ -17,9 +17,7 @@ export function Header() {
       const isScrolled = window.scrollY > 50;
       setIsScrolled(isScrolled);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -28,7 +26,7 @@ export function Header() {
     <MotionTransition>
       <nav
         className={`flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8 md:fixed md:w-full md:z-50 md:left-0 md:right-0 ${
-          isScrolled ? "bg-gray-100 md:py-2" : ""
+          isScrolled ? "bg-gray-100 dark:bg-primaryDark md:py-1" : ""
         }`}
       >
         <Link href="/" className="flex items-center">
