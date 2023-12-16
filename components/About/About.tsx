@@ -4,9 +4,11 @@ import Link from "next/link";
 import { BackgroundRadialLeft } from "../BackgroundRadialLeft";
 import { Reveal } from "../Reveal";
 import { dataAbout } from "./About.data";
-import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export function About() {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   return (
     <div className="relative px-6 py-20 md:py-64" id="about">
       <BackgroundRadialLeft />
@@ -14,17 +16,19 @@ export function About() {
         <div>
           <Reveal>
             <h2 className="text-5xl font-semibold">
-              <span className="block degradedBlue text-cyan-600 dark:bg-blueLight">
+              <span className="block degradedBlue text-grayDark dark:bg-blueLight">
                 Nos presentan un problema
               </span>
-              <span className="block degradedBlue text-gray-600 dark:text-white">
+              <span className="block degradedBlue text-blue dark:text-white">
                 nosotros encontramos <br />
-                la mejor solución
+                <span className="text-grayDark degradedBlue dark:text-white">
+                  la mejor solución
+                </span>
               </span>
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 dark:text-primaryDark text-gray-600">
+            <p className="max-w-md mt-10 dark:text-primaryDark text-gray">
               En MASYDASE, somos un equipo joven dedicado a la programación de
               sistemas convertidas en soluciones, y que brinda soporte técnico a
               más de 350 empresas nacionales, desde 1998.
@@ -34,7 +38,7 @@ export function About() {
             <div className="my-8">
               <Link
                 href="#plans"
-                className="px-4 py-3 rounded-md bg-cyan-500 text-white hover:bg-cyan-700 dark:bg-blueRadial"
+                className="px-4 py-3 rounded-md bg-primary text-white hover:bg-blue dark:bg-blueRadial"
               >
                 Elige tu plan
               </Link>
@@ -43,24 +47,23 @@ export function About() {
         </div>
 
         <div className="grid items-center py-5 md:p-8">
-          {dataAbout.map(({ id, icon, title, description }) => (
-            <Reveal key={id}>
-              <div className="grid grid-flow-col gap-5 px-4 py-2 rounded-3xl group hover:bg-gray-200 dark:hover:bg-radialBlack">
-                <Image
-                  src={`/assets/${icon}.png`}
-                  alt={title}
-                  width={40}
-                  height={40}
-                />
-                <div>
-                  <h4 className="dark:text-primary font-semibold text-gray-700">
-                    {title}
-                  </h4>
-                  <p className="dark:text-primaryDark ">{description}</p>
+          {dataAbout.map(({ id, icon: Icon, title, description }) => {
+            return (
+              <Reveal key={id}>
+                <div className="grid grid-flow-col gap-5 px-4 py-2 rounded-3xl group hover:bg-slate-100 dark:hover:bg-radialBlack">
+                  <Icon className="h-8 w-8 text-blue dark:text-secondary" />
+                  <div>
+                    <h4 className="dark:text-white font-semibold text-blue">
+                      {title}
+                    </h4>
+                    <p className="dark:text-primaryDark text-grayDark">
+                      {description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Reveal>
-          ))}
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </div>

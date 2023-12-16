@@ -26,14 +26,14 @@ export function Header() {
     <MotionTransition>
       <nav
         className={`flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8 md:fixed md:w-full md:z-50 md:left-0 md:right-0 ${
-          isScrolled ? "bg-slate-50 dark:bg-black md:py-2" : ""
+          isScrolled ? "bg-slate-50 dark:bg-black md:py-1" : ""
         }`}
       >
         <Link href="/" className="flex items-center">
           <Image
             src="/assets/logo2.png"
-            width="150"
-            height="40"
+            width={150}
+            height={40}
             alt="Logo MasyDase"
           />
         </Link>
@@ -54,7 +54,7 @@ export function Header() {
               >
                 <Link
                   href={idLink}
-                  className="text-lg hover:text-cyan-800 dark:hover:text-secondary text-gray-700 dark:text-white"
+                  className="text-lg hover:text-primary dark:hover:text-secondary text-grayDark dark:text-white"
                 >
                   {name}
                 </Link>

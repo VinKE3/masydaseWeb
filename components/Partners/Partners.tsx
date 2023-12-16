@@ -5,8 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { dataPartners } from "./Partners.data";
 import Image from "next/image";
 import { CtaDark } from "../CtaDark";
+import { useTheme } from "next-themes";
 
 export function Partners() {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   return (
     <div className="relative py-20 md:py-64" id="servicios">
       <BackgroundRadialRight />
@@ -34,9 +37,9 @@ export function Partners() {
               >
                 <Image
                   src={`/assets/${image}`}
-                  alt="Payment"
-                  width="70"
-                  height="70"
+                  alt="Parteners"
+                  width={70}
+                  height={70}
                   className="h-[60px] w-[120px] object-contain"
                 />
               </SwiperSlide>

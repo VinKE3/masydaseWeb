@@ -7,7 +7,7 @@ import { Reveal } from "../Reveal";
 export function Services() {
   return (
     <div className="p-4 py-20 md:py-64" id="services">
-      <h2 className="text-5xl font-bold text-center text-gray-600 block dark:bg-blueRadial degradedBlue mb-24">
+      <h2 className="text-5xl font-bold text-center from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue mb-24">
         Soluciones de Negocio
       </h2>
       <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
@@ -22,12 +22,12 @@ export function Services() {
         </MotionTransition>
         <div className="flex-1 p-6 md:p-8">
           <Reveal>
-            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-gray-600">
+            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
               Consultoría <br />y auditoría
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 text-gray-500 dark:text-primaryDark">
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark">
               Nuestro servicio de auditoría a los estados financieros tiene como
               propósito emitir opinión sobre la razonabilidad de los estados
               financieros. Complementamos nuestra revisión con un exhaustivo
@@ -49,13 +49,13 @@ export function Services() {
         </MotionTransition>
         <div className="flex-1 p-6 md:p-8">
           <Reveal>
-            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-gray-600">
+            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
               Outsourcing <br />
               contable
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 text-gray-500 dark:text-primaryDark">
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark">
               El Outsourcing Contable es una moderna herramienta de
               administración, que permite a nuestra firma trabajar en conjunto
               con nuestros socios, dejando en manos de especialistas con
@@ -79,13 +79,13 @@ export function Services() {
         </MotionTransition>
         <div className="flex-1 p-6 md:p-8">
           <Reveal>
-            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-gray-600">
+            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
               Alojamiento <br />
               CLOUD
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 text-gray-500 dark:text-primaryDark">
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark">
               Los planes que te ofrecemos, permite que tu nube sea monitoreado
               por varios usuarios. La plataforma Cloud Storage, agiliza el
               almacenamiento de archivos, bases de datos y sistemas, con la
@@ -106,13 +106,13 @@ export function Services() {
         </MotionTransition>
         <div className="flex-1 p-6 md:p-8">
           <Reveal>
-            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-gray-600">
+            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
               Diseño y desarrollo <br />
               de páginas web
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 text-gray-500 dark:text-primaryDark">
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark">
               Los planes que te ofrecemos, permite que tu nube sea monitoreado
               por varios usuarios. La plataforma Cloud Storage, agiliza el
               almacenamiento de archivos, bases de datos y sistemas, con la

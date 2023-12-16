@@ -8,16 +8,19 @@ import { Reveal } from "../Reveal";
 import { Pagination } from "swiper/modules";
 import { dataCards } from "./ChooseYourCards.data";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export function ChooseYourCards() {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   return (
     <div className="relative px-6 py-20 md:py-64" id="tarjetas">
       <BackgroundRadialRight />
       <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
         <Reveal>
-          <h2 className="text-5xl font-semibold text-gray-600 dark:text-white">
+          <h2 className="text-5xl font-semibold text-grayDark dark:text-white">
             Elige el sistema Coorporativo
-            <span className="block degradedBlue dark:bg-blueLight text-cyan-600">
+            <span className="block degradedBlue dark:bg-blueLight text-blue">
               que se adapte mejor a tus necesidades
             </span>
           </h2>
@@ -31,12 +34,7 @@ export function ChooseYourCards() {
             >
               {dataCards.map(({ image, id }) => (
                 <SwiperSlide key={id}>
-                  <Image
-                    src={image}
-                    alt="Credit Card"
-                    width="400"
-                    height="300"
-                  />
+                  <Image src={image} alt="Card" width="400" height="300" />
                 </SwiperSlide>
               ))}
             </Swiper>

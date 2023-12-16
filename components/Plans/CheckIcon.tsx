@@ -2,7 +2,7 @@ import React from "react";
 
 export function CheckIcon() {
   return (
-    <span className="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+    <span className="w-5 h-5 inline-flex items-center justify-center bg-grayDark text-white rounded-full flex-shrink-0">
       <svg
         fill="none"
         stroke="currentColor"

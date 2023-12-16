@@ -8,16 +8,19 @@ export function CounterData() {
     <MotionTransition className="lg:max-w-4xl xl:max-w-5xl py-10 mx-auto md:py-64">
       <div className="justify-between md:flex">
         {dataCounter.map(({ id, startNumber, endNumber, text }) => (
-          <div key={id} className="py-5 text-2xl text-center md:text-left">
+          <div
+            key={id}
+            className="text-grayDark dark:text-white py-5 text-2xl text-center md:text-left"
+          >
             +
             <CountUp
-              className="text-gray-600 dark:text-white"
+              className="text-grayDark dark:text-white"
               start={startNumber}
               end={endNumber}
               duration={1.5}
               enableScrollSpy
             />{" "}
-            <span className="degradedBlue dark:bg-blueLight text-cyan-600">
+            <span className="degradedBlue dark:bg-blueLight text-primary">
               {text}
             </span>
           </div>
