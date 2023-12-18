@@ -36,7 +36,6 @@ export function Partners() {
             disableOnInteraction: false,
           }}
           grabCursor={true}
-          loop={true}
           speed={2000}
         >
           <div className="absolute flex">
