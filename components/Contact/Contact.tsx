@@ -37,14 +37,14 @@ export function Contact() {
                   <div className="mb-3 w-full">
                     <label
                       className="block font-medium mb-[2px] text-grayDark dark:bg-blueRadial degradedBlue"
-                      htmlFor="exampleInput90"
+                      htmlFor="name"
                     >
                       Nombre
                     </label>
                     <input
                       type="text"
                       className="px-2 py-2 border w-full outline-none rounded-md dark:text-white text-gray-950"
-                      id="exampleInput90"
+                      id="name"
                       placeholder="Nombre"
                     />
                   </div>
@@ -52,14 +52,14 @@ export function Contact() {
                   <div className="mb-3 w-full">
                     <label
                       className="block font-medium mb-[2px] text-grayDark dark:bg-blueRadial degradedBlue"
-                      htmlFor="exampleInput90"
+                      htmlFor="email"
                     >
                       Email
                     </label>
                     <input
                       type="email"
                       className="px-2 py-2 border w-full outline-none rounded-md dark:text-white text-gray-950"
-                      id="exampleInput90"
+                      id="email"
                       placeholder="Ingrese su email"
                     />
                   </div>
@@ -67,14 +67,14 @@ export function Contact() {
                   <div className="mb-3 w-full">
                     <label
                       className="block font-medium mb-[2px] text-grayDark dark:bg-blueRadial degradedBlue"
-                      htmlFor="exampleInput90"
+                      htmlFor="mensaje"
                     >
                       Mensaje
                     </label>
                     <textarea
                       className="px-2 py-2 border rounded-[5px] w-full outline-none dark:text-white text-gray-950"
-                      name=""
-                      id=""
+                      name="mensaje"
+                      id="mensaje"
                       placeholder="Ingrese su mensaje"
                     ></textarea>
                   </div>
