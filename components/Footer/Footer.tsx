@@ -22,11 +22,13 @@ export function Footer() {
                     alt="Logo MasyDase"
                   />
                 </div>
-                <p className="text-base text-grayDark dark:text-primaryDark">
-                  Somos un equipo joven dedicado a la programación de sistemas
-                  convertidas en soluciones, y que brinda soporte técnico a más
-                  de 350 empresas nacionales, desde 1998.
-                </p>
+                <Reveal>
+                  <p className="text-base text-grayDark dark:text-primaryDark">
+                    Somos un equipo joven dedicado a la programación de sistemas
+                    convertidas en soluciones, y que brinda soporte técnico a
+                    más de 350 empresas nacionales, desde 1998.
+                  </p>
+                </Reveal>
               </div>
 
               <div className="px-4 my-4 w-full sm:w-auto">
@@ -37,69 +39,80 @@ export function Footer() {
                 </div>
                 <div className="flex flex-col text-grayDark dark:text-primaryDark ">
                   <div className="flex gap-2 ">
-                    <a
-                      href="tel:850-123-5021"
-                      aria-label="Our phone"
-                      title="Our phone"
-                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                    >
-                      (+51)987351513
-                    </a>
-                    <span>/</span>
-                    <a
-                      href="tel:850-123-5021"
-                      aria-label="Our phone"
-                      title="Our phone"
-                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                    >
-                      (+51)984799203
-                    </a>
+                    <Reveal>
+                      <a
+                        href="tel:850-123-5021"
+                        aria-label="Our phone"
+                        title="Our phone"
+                        className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                      >
+                        (+51)987351513
+                      </a>
+                      <span>/</span>
+                      <a
+                        href="tel:850-123-5021"
+                        aria-label="Our phone"
+                        title="Our phone"
+                        className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                      >
+                        (+51)984799203
+                      </a>
+                    </Reveal>
                   </div>
                   <div className="flex gap-2">
-                    <a
-                      href="tel:850-123-5021"
-                      aria-label="Our phone"
-                      title="Our phone"
-                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                    >
-                      (01)2873208
-                    </a>
-                    <span>/</span>
-                    <a
-                      href="tel:850-123-5021"
-                      aria-label="Our phone"
-                      title="Our phone"
-                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                    >
-                      (01)7765066
-                    </a>
+                    <Reveal>
+                      <a
+                        href="tel:850-123-5021"
+                        aria-label="Our phone"
+                        title="Our phone"
+                        className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                      >
+                        (01)2873208
+                      </a>
+                      <span>/</span>
+                      <a
+                        href="tel:850-123-5021"
+                        aria-label="Our phone"
+                        title="Our phone"
+                        className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                      >
+                        (01)7765066
+                      </a>
+                    </Reveal>
                   </div>
                 </div>
                 <div className="flex flex-col text-gray dark:text-primaryDark">
-                  <a
-                    href="mailto:ventas@masydase.com"
-                    aria-label="ventasMail"
-                    title="ventasMail"
-                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                  >
-                    ventas@masydase.com
-                  </a>
-                  <a
-                    href="mailto:sistemas@masydase.com"
-                    aria-label="sistemasMail"
-                    title="sistemasMail"
-                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                  >
-                    sistemas@masydase.com
-                  </a>
-                  <a
-                    href="mailto:info@lorem.mail"
-                    aria-label="infoMail"
-                    title="infoMail"
-                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                  >
-                    info@masydase.com
-                  </a>
+                  <Reveal>
+                    <a
+                      href="mailto:ventas@masydase.com"
+                      aria-label="ventasMail"
+                      title="ventasMail"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                    >
+                      ventas@masydase.com
+                    </a>
+                  </Reveal>
+                  <Reveal>
+                    {" "}
+                    <a
+                      href="mailto:sistemas@masydase.com"
+                      aria-label="sistemasMail"
+                      title="sistemasMail"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                    >
+                      sistemas@masydase.com
+                    </a>
+                  </Reveal>
+                  <Reveal>
+                    <a
+                      href="mailto:info@lorem.mail"
+                      aria-label="infoMail"
+                      title="infoMail"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                    >
+                      info@masydase.com
+                    </a>
+                  </Reveal>
                 </div>
               </div>
               <div className="px-4 my-4 w-full sm:w-auto">
@@ -110,33 +123,55 @@ export function Footer() {
                 </div>
                 <div className="flex gap-6">
                   <div className="flex flex-col text-grayDark dark:text-primaryDark">
-                    <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                      E - MASY Comercials.
-                    </p>
-                    <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                      E - MASY Farma.
-                    </p>
-                    <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                      E - MASY Market.
-                    </p>
-                    <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                      Utilcon 2020.02.
-                    </p>
+                    <Reveal>
+                      {" "}
+                      <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                        E - MASY Comercials.
+                      </p>
+                    </Reveal>
+                    <Reveal>
+                      {" "}
+                      <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                        E - MASY Farma.
+                      </p>
+                    </Reveal>
+                    <Reveal>
+                      {" "}
+                      <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                        E - MASY Market.
+                      </p>
+                    </Reveal>
+                    <Reveal>
+                      {" "}
+                      <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                        Utilcon 2020.02.
+                      </p>
+                    </Reveal>
                   </div>
                   <div className="flex flex-col text-grayDark dark:text-primaryDark">
                     <div className="flex flex-col">
-                      <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                        Diseño Web.
-                      </p>
-                      <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                        Alojamiento CLOUD.
-                      </p>
-                      <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                        Consultoría y Auditoría.
-                      </p>
-                      <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                        Outsourcing contable.
-                      </p>
+                      <Reveal>
+                        {" "}
+                        <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                          Diseño Web.
+                        </p>
+                      </Reveal>
+                      <Reveal>
+                        {" "}
+                        <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                          Alojamiento CLOUD.
+                        </p>
+                      </Reveal>
+                      <Reveal>
+                        <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                          Consultoría y Auditoría.
+                        </p>
+                      </Reveal>
+                      <Reveal>
+                        <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                          Outsourcing contable.
+                        </p>
+                      </Reveal>
                     </div>
                   </div>
                 </div>
@@ -147,17 +182,19 @@ export function Footer() {
                     Contactanos en Redes
                   </h2>
                 </div>
-                <div className="flex gap-5 text-grayDark dark:text-primaryDark">
-                  {footerSocialNetworks.map(({ id, icon, link }) => (
-                    <Link
-                      key={id}
-                      href={link}
-                      className="text-2xl transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                    >
-                      {icon}
-                    </Link>
-                  ))}
-                </div>
+                <Reveal>
+                  <div className="flex gap-5 text-grayDark dark:text-primaryDark">
+                    {footerSocialNetworks.map(({ id, icon, link }) => (
+                      <Link
+                        key={id}
+                        href={link}
+                        className="text-2xl transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                      >
+                        {icon}
+                      </Link>
+                    ))}
+                  </div>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -165,16 +202,21 @@ export function Footer() {
         <div className="py-4 text-gray-100">
           <div className="container mx-auto px-4">
             <div className="-mx-4 flex flex-wrap justify-between">
-              <div className="px-4 w-full text-center sm:w-auto sm:text-left text-base text-grayDark dark:text-primaryDark">
-                Copyright © {copyright} MasyDase. All Rights Reserved.
-              </div>
-              <div className="px-4 w-full text-center sm:w-auto sm:text-left">
-                Made with ❤️ by{" "}
-                <span className="from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
-                  VinKE
-                </span>
-                .
-              </div>
+              <Reveal>
+                {" "}
+                <div className="px-4 w-full text-center sm:w-auto sm:text-left text-base text-grayDark dark:text-primaryDark">
+                  Copyright © {copyright} MasyDase. All Rights Reserved.
+                </div>
+              </Reveal>
+              <Reveal>
+                <div className="px-4 w-full text-center sm:w-auto sm:text-left">
+                  Made with ❤️ by{" "}
+                  <span className="from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
+                    VinKE
+                  </span>
+                  .
+                </div>
+              </Reveal>
             </div>
           </div>
         </div>
