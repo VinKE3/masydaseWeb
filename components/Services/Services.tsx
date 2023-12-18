@@ -20,29 +20,29 @@ export function Services() {
     return null;
   }
   return (
-    <div className="p-4 py-20 md:py-64" id="services">
+    <div className="relative p-4 py-20 md:py-64" id="services">
       {isDark && <BackgroundRadialRight />}
-      <h2 className="text-4xl md:text-5xl  font-bold text-center from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue mb-24">
+      <h2 className="text-4xl md:text-5xl py-2 font-bold text-center from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue mb-3 md:mb-24">
         Soluciones de Negocio
       </h2>
-      <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
+      <div className="mt-10 flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/consultoria.png"
             alt="Control Business"
-            width="580"
+            width="480"
             height={411}
             className="w-full h-auto"
           />
         </MotionTransition>
-        <div className="flex-1 p-6 md:p-8">
+        <div className="flex flex-col items-center justify-center p-6 md:p-8">
           <Reveal>
-            <h2 className="text-4xl md:text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
+            <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center">
               Consultoría <br />y auditoría
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark">
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark text-center">
               Nuestro servicio de auditoría a los estados financieros tiene como
               propósito emitir opinión sobre la razonabilidad de los estados
               financieros. Complementamos nuestra revisión con un exhaustivo
@@ -52,25 +52,25 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
+      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/outsor.png"
             alt="Control Business"
-            width="580"
+            width="480"
             height={411}
             className="w-full h-auto"
           />
         </MotionTransition>
-        <div className="flex-1 p-6 md:p-8">
+        <div className="flex flex-col items-center justify-center p-6 md:p-8">
           <Reveal>
-            <h2 className="text-4xl md:text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
+            <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center">
               Outsourcing <br />
               contable
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark">
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark text-center">
               El Outsourcing Contable es una moderna herramienta de
               administración, que permite a nuestra firma trabajar en conjunto
               con nuestros socios, dejando en manos de especialistas con
@@ -82,25 +82,25 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
+      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/cloud2.png"
             alt="Control Business"
-            width="580"
+            width="480"
             height={411}
             className="w-full h-auto"
           />
         </MotionTransition>
-        <div className="flex-1 p-6 md:p-8">
+        <div className="flex flex-col items-center justify-center p-6 md:p-8">
           <Reveal>
-            <h2 className="text-4xl md:text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
+            <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center">
               Alojamiento <br />
               CLOUD
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark">
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark text-center">
               Los planes que te ofrecemos, permite que tu nube sea monitoreado
               por varios usuarios. La plataforma Cloud Storage, agiliza el
               almacenamiento de archivos, bases de datos y sistemas, con la
@@ -109,25 +109,25 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
+      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/control-business.png"
             alt="Control Business"
-            width="580"
+            width="480"
             height={411}
             className="w-full h-auto"
           />
         </MotionTransition>
-        <div className="flex-1 p-6 md:p-8">
+        <div className="flex flex-col items-center justify-center p-6 md:p-8">
           <Reveal>
-            <h2 className="text-4xl md:text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
+            <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center">
               Diseño y desarrollo <br />
               de páginas web
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark">
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark text-center">
               Los planes que te ofrecemos, permite que tu nube sea monitoreado
               por varios usuarios. La plataforma Cloud Storage, agiliza el
               almacenamiento de archivos, bases de datos y sistemas, con la

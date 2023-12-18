@@ -22,7 +22,7 @@ export function Plans() {
   return (
     <div className="relative px-6 py-20 md:py-64" id="plans">
       {isDark && <BackgroundRadialRight />}
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <MotionTransition>
           <section className="text-white body-font overflow-hidden">
             <div className="p-2 mx-auto mb-8 text-center lg:mb-12">

@@ -28,7 +28,7 @@ export function Reveal({
 
   useEffect(() => {
     // Cambia el color de fondo después de que el componente se haya montado en el cliente
-    setBgColor(theme === "dark" ? "#6DE4E8" : "#1240d8");
+    setBgColor(theme === "dark" ? "#6DE4E8" : "#0B3C6C");
   }, [theme]);
 
   return (

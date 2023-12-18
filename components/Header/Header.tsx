@@ -25,7 +25,7 @@ export function Header() {
   return (
     <MotionTransition>
       <nav
-        className={`flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto ${
+        className={`flex flex-wrap items-center justify-between max-w-7xl p-4 mx-auto ${
           isScrolled ? "py-4" : "py-8"
         } fixed w-full z-50 left-0 right-0 ${
           isScrolled ? "bg-slate-50 dark:bg-black" : ""

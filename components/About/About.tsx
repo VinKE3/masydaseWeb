@@ -20,9 +20,12 @@ export function About() {
     return null;
   }
   return (
-    <div className="relative px-6 py-20 md:py-64" id="about">
+    <div
+      className="relative px-6 py-20 md:py-64 bg-slate-100 dark:bg-black"
+      id="about"
+    >
       {isDark && <BackgroundRadialLeft />}
-      <div className="grid max-w-5xl mx-auto md:grid-cols-2">
+      <div className="grid max-w-7xl mx-auto md:grid-cols-2">
         <div>
           <Reveal>
             <h2 className="text-4xl md:text-5xl font-semibold">

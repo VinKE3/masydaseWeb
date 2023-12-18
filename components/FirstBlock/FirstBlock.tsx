@@ -23,7 +23,7 @@ export function FirstBlock() {
   return (
     <div className="relative p-4 md:py-40">
       {isDark && <BackgroundRadialRight />}
-      <div className="grid max-w-5xl mx-auto md:grid-cols-2">
+      <div className="grid max-w-7xl mx-auto md:grid-cols-2">
         <div>
           <Reveal>
             <h1 className="text-4xl md:text-5xl text-grayDark dark:text-white font-semibold">

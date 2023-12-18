@@ -21,7 +21,7 @@ export function Contact() {
   return (
     <div className="relative px-6 py-20 md:py-32" id="contact">
       {isDark && <BackgroundRadialLeft />}
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <MotionTransition>
           <div className="my-12 mx-auto px-2 md:px-4">
             <section className="mb-32">

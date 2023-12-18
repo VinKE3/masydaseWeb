@@ -25,9 +25,12 @@ export function ChooseYourCards() {
   }
 
   return (
-    <div className="relative px-6 py-20 md:py-64" id="tarjetas">
+    <div
+      className="relative px-6 py-20 md:py-64 bg-slate-100 dark:bg-black"
+      id="tarjetas"
+    >
       {isDark && <BackgroundRadialLeft />}
-      <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
+      <div className="block max-w-7xl mx-auto md:grid md:grid-cols-2">
         <Reveal>
           <h2 className="text-4xl md:text-5xl font-semibold text-grayDark dark:text-white">
             Elige el sistema Coorporativo

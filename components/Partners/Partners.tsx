@@ -21,7 +21,10 @@ export function Partners() {
     return null;
   }
   return (
-    <div className="relative py-20 md:py-64" id="servicios">
+    <div
+      className="relative py-20 md:py-64 bg-slate-100 dark:bg-black"
+      id="servicios"
+    >
       {isDark && <BackgroundRadialRight />}
       <div className="relative w-full overflow-hidden">
         <Swiper
@@ -56,7 +59,6 @@ export function Partners() {
           </div>
         </Swiper>
       </div>
-
       <CtaDark />
     </div>
   );
