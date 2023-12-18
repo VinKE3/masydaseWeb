@@ -203,20 +203,18 @@ export function Footer() {
           <div className="container mx-auto px-4">
             <div className="-mx-4 flex flex-wrap justify-between">
               <Reveal>
-                {" "}
                 <div className="px-4 w-full text-center sm:w-auto sm:text-left text-base text-grayDark dark:text-primaryDark">
                   Copyright © {copyright} MasyDase. All Rights Reserved.
                 </div>
               </Reveal>
-              <Reveal>
-                <div className="px-4 w-full text-center sm:w-auto sm:text-left">
-                  Made with ❤️ by{" "}
+              <div className="flex items-center justify-center px-4 w-full text-center sm:w-auto sm:text-left gap-2">
+                <div>Made with ❤️ by </div>
+                <Reveal>
                   <span className="from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
-                    VinKE
+                    VinKE.
                   </span>
-                  .
-                </div>
-              </Reveal>
+                </Reveal>
+              </div>
             </div>
           </div>
         </div>

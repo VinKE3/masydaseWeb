@@ -26,7 +26,7 @@ export function FirstBlock() {
       <div className="grid max-w-5xl mx-auto md:grid-cols-2">
         <div>
           <Reveal>
-            <h1 className="text-4xl text-grayDark dark:text-white font-semibold">
+            <h1 className="text-4xl md:text-5xl text-grayDark dark:text-white font-semibold">
               Transformamos
               <br />
               ideas en

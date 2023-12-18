@@ -29,7 +29,7 @@ export function ChooseYourCards() {
       {isDark && <BackgroundRadialLeft />}
       <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
         <Reveal>
-          <h2 className="text-5xl font-semibold text-grayDark dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-semibold text-grayDark dark:text-white">
             Elige el sistema Coorporativo
             <span className="block degradedBlue dark:bg-blueLight text-blue">
               que se adapte mejor a tus necesidades

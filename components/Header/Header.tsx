@@ -45,7 +45,9 @@ export function Header() {
         />
         <div
           className={`${
-            openMobileMenu ? "block dark:bg-black bg-white" : "hidden"
+            openMobileMenu
+              ? "block dark:bg-black mt-4 bg-slate-50 rounded-xl"
+              : "hidden"
           } w-full md:block md:w-auto`}
         >
           <div className="flex flex-col p-4 mt-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
@@ -64,7 +66,7 @@ export function Header() {
               </div>
             ))}
             <div className="px-4 py-2 md:px-0 md:py-0">
-              <ThemeSwitcherBtn />
+              <ThemeSwitcherBtn setOcultar={() => setOpenMobileMenu(false)} />
             </div>
           </div>
         </div>

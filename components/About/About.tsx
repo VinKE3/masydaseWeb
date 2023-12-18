@@ -25,7 +25,7 @@ export function About() {
       <div className="grid max-w-5xl mx-auto md:grid-cols-2">
         <div>
           <Reveal>
-            <h2 className="text-5xl font-semibold">
+            <h2 className="text-4xl md:text-5xl font-semibold">
               <span className="block degradedBlue text-grayDark dark:bg-blueLight">
                 Nos presentan un problema
               </span>

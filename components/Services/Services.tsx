@@ -22,7 +22,7 @@ export function Services() {
   return (
     <div className="p-4 py-20 md:py-64" id="services">
       {isDark && <BackgroundRadialRight />}
-      <h2 className="text-5xl font-bold text-center from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue mb-24">
+      <h2 className="text-4xl md:text-5xl  font-bold text-center from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue mb-24">
         Soluciones de Negocio
       </h2>
       <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
@@ -37,7 +37,7 @@ export function Services() {
         </MotionTransition>
         <div className="flex-1 p-6 md:p-8">
           <Reveal>
-            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
+            <h2 className="text-4xl md:text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
               Consultoría <br />y auditoría
             </h2>
           </Reveal>
@@ -64,7 +64,7 @@ export function Services() {
         </MotionTransition>
         <div className="flex-1 p-6 md:p-8">
           <Reveal>
-            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
+            <h2 className="text-4xl md:text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
               Outsourcing <br />
               contable
             </h2>
@@ -94,7 +94,7 @@ export function Services() {
         </MotionTransition>
         <div className="flex-1 p-6 md:p-8">
           <Reveal>
-            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
+            <h2 className="text-4xl md:text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
               Alojamiento <br />
               CLOUD
             </h2>
@@ -121,7 +121,7 @@ export function Services() {
         </MotionTransition>
         <div className="flex-1 p-6 md:p-8">
           <Reveal>
-            <h2 className="text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
+            <h2 className="text-4xl md:text-5xl font-semibold dark:bg-blueRadial degradedBlue text-grayDark">
               Diseño y desarrollo <br />
               de páginas web
             </h2>

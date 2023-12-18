@@ -27,7 +27,7 @@ export function Contact() {
             <section className="mb-32">
               <div className="flex justify-center">
                 <div className="text-center md:max-w-xl lg:max-w-3xl">
-                  <h2 className="mb-12 px-6 text-5xl p-4 from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent font-bold dark:bg-blueRadial degradedBlue">
+                  <h2 className="mb-12 px-6 text-4xl md:text-5xl p-4 from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent font-bold dark:bg-blueRadial degradedBlue">
                     Contactanos
                   </h2>
                 </div>
