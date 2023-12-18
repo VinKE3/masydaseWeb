@@ -13,7 +13,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <FirstBlock />
+      <div className="pt-20 md:pt-0">
+        <FirstBlock />
+      </div>
       <CounterData />
       <About />
       <Plans />

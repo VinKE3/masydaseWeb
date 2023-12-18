@@ -25,8 +25,10 @@ export function Header() {
   return (
     <MotionTransition>
       <nav
-        className={`flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8 md:fixed md:w-full md:z-50 md:left-0 md:right-0 ${
-          isScrolled ? "bg-slate-50 dark:bg-black md:py-1" : ""
+        className={`flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto ${
+          isScrolled ? "py-4" : "py-8"
+        } fixed w-full z-50 left-0 right-0 ${
+          isScrolled ? "bg-slate-50 dark:bg-black" : ""
         }`}
       >
         <Link href="/" className="flex items-center">
@@ -43,10 +45,10 @@ export function Header() {
         />
         <div
           className={`${
-            openMobileMenu ? "block" : "hidden"
+            openMobileMenu ? "block dark:bg-black bg-white" : "hidden"
           } w-full md:block md:w-auto`}
         >
-          <div className="flex flex-col p-4 mt-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+          <div className="flex flex-col p-4 mt-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
             {dataHeader.map(({ id, name, idLink }) => (
               <div
                 key={id}
@@ -55,6 +57,7 @@ export function Header() {
                 <Link
                   href={idLink}
                   className="text-lg hover:text-primary dark:hover:text-secondary text-grayDark dark:text-white"
+                  onClick={() => setOpenMobileMenu(false)}
                 >
                   {name}
                 </Link>

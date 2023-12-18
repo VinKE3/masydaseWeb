@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Reveal } from "../Reveal";
-import { footerData, footerSocialNetworks } from "./Footer.data";
+import { footerSocialNetworks } from "./Footer.data";
 import Link from "next/link";
 
 export function Footer() {
   const year = new Date().getFullYear();
-  const copyright = year > 2020 ? `2020 - ${year}` : "2020";
+  const copyright = year > 1998 ? `1998 - ${year}` : "2024";
 
   return (
     <>
@@ -35,13 +35,13 @@ export function Footer() {
                     Contacto
                   </h2>
                 </div>
-                <div className="flex flex-col text-grayDark dark:text-primaryDark">
-                  <div className="flex gap-2">
+                <div className="flex flex-col text-grayDark dark:text-primaryDark ">
+                  <div className="flex gap-2 ">
                     <a
                       href="tel:850-123-5021"
                       aria-label="Our phone"
                       title="Our phone"
-                      className="transition-colors duration-300"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                     >
                       (+51)987351513
                     </a>
@@ -50,7 +50,7 @@ export function Footer() {
                       href="tel:850-123-5021"
                       aria-label="Our phone"
                       title="Our phone"
-                      className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                     >
                       (+51)984799203
                     </a>
@@ -60,7 +60,7 @@ export function Footer() {
                       href="tel:850-123-5021"
                       aria-label="Our phone"
                       title="Our phone"
-                      className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                     >
                       (01)2873208
                     </a>
@@ -69,7 +69,7 @@ export function Footer() {
                       href="tel:850-123-5021"
                       aria-label="Our phone"
                       title="Our phone"
-                      className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                     >
                       (01)7765066
                     </a>
@@ -80,7 +80,7 @@ export function Footer() {
                     href="mailto:ventas@masydase.com"
                     aria-label="ventasMail"
                     title="ventasMail"
-                    className="transition-colors duration-300 "
+                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                   >
                     ventas@masydase.com
                   </a>
@@ -88,7 +88,7 @@ export function Footer() {
                     href="mailto:sistemas@masydase.com"
                     aria-label="sistemasMail"
                     title="sistemasMail"
-                    className="transition-colors duration-300 "
+                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                   >
                     sistemas@masydase.com
                   </a>
@@ -96,7 +96,7 @@ export function Footer() {
                     href="mailto:info@lorem.mail"
                     aria-label="infoMail"
                     title="infoMail"
-                    className="transition-colors duration-300 "
+                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                   >
                     info@masydase.com
                   </a>
@@ -147,9 +147,13 @@ export function Footer() {
                     Contactanos en Redes
                   </h2>
                 </div>
-                <div className="flex gap-5">
+                <div className="flex gap-5 text-grayDark dark:text-primaryDark">
                   {footerSocialNetworks.map(({ id, icon, link }) => (
-                    <Link key={id} href={link} className="text-2xl">
+                    <Link
+                      key={id}
+                      href={link}
+                      className="text-2xl transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                    >
                       {icon}
                     </Link>
                   ))}
@@ -161,7 +165,7 @@ export function Footer() {
         <div className="py-4 text-gray-100">
           <div className="container mx-auto px-4">
             <div className="-mx-4 flex flex-wrap justify-between">
-              <div className="px-4 w-full text-center sm:w-auto sm:text-left">
+              <div className="px-4 w-full text-center sm:w-auto sm:text-left text-base text-grayDark dark:text-primaryDark">
                 Copyright © {copyright} MasyDase. All Rights Reserved.
               </div>
               <div className="px-4 w-full text-center sm:w-auto sm:text-left">
