@@ -4,9 +4,24 @@ import Link from "next/link";
 import { MotionTransition } from "../MotionTransition";
 import { CheckIcon } from "./CheckIcon";
 import { XIcon } from "./XIcon";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { BackgroundRadialRight } from "../BackgroundRadialRight";
 export function Plans() {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
   return (
     <div className="relative px-6 py-20 md:py-64" id="plans">
+      {isDark && <BackgroundRadialRight />}
       <div className="max-w-5xl mx-auto">
         <MotionTransition>
           <section className="text-white body-font overflow-hidden">

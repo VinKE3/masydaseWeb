@@ -3,10 +3,25 @@
 import Image from "next/image";
 import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { BackgroundRadialRight } from "../BackgroundRadialRight";
 
 export function Services() {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
   return (
     <div className="p-4 py-20 md:py-64" id="services">
+      {isDark && <BackgroundRadialRight />}
       <h2 className="text-5xl font-bold text-center from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue mb-24">
         Soluciones de Negocio
       </h2>

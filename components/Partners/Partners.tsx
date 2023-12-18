@@ -6,13 +6,23 @@ import { dataPartners } from "./Partners.data";
 import Image from "next/image";
 import { CtaDark } from "../CtaDark";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function Partners() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
   return (
     <div className="relative py-20 md:py-64" id="servicios">
-      <BackgroundRadialRight />
+      {isDark && <BackgroundRadialRight />}
       <div className="relative w-full overflow-hidden">
         <Swiper
           breakpoints={{
