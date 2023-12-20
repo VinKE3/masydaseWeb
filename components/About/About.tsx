@@ -21,7 +21,7 @@ export function About() {
   }
   return (
     <div
-      className="relative px-6 py-20 md:py-64 bg-slate-100 dark:bg-black"
+      className={`${isDark ? "" : "bg-slate-100"} relative px-6 py-20 md:py-64`}
       id="about"
     >
       {isDark && <BackgroundRadialLeft />}

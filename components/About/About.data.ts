@@ -5,22 +5,21 @@ export const dataAbout: AboutData = [
   {
     id: 1,
     icon: Star,
-    title: "Calidad",
+    title: "Misión",
     description:
-      "Brindamos servicios de calidad, que se adaptan a las necesidades de nuestros clientes",
+      "Es adaptarnos a las necesidades de los sistemas de gestión corporativa, ofreciendo soluciones creativas e innovadoras, a través de sistemas flexibles y un soporte técnico integrado a la medida de tu negocio.",
   },
   {
     id: 2,
     icon: Sparkle,
-    title: "Creatividad",
+    title: "Vición",
     description:
-      "Contamos con un equipo de profesionales que se encargan de brindarle las mejores soluciones para su negocio.",
+      "Es ser líderes del mercado informático y patentar la gran mayoría de sistemas adaptables a todos los niveles y giros de negocio del Perú, a fin de fortalecer la seguridad de todas las empresas que nos dan su confianza.",
   },
   {
     id: 3,
     icon: ShieldCheck,
-    title: "Seguridad",
-    description:
-      "Nuestro equipo de soporte está disponible en nuestro horario de oficina para ayudarlo con cualquier problema que pueda tener.",
+    title: "Valores",
+    description: "Responsabilidad, honestidad, respeto..",
   },
 ];

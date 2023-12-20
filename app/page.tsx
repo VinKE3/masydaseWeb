@@ -1,7 +1,9 @@
 import { About } from "@/components/About";
+import Benefits from "@/components/Benefits/Benefits";
 import { ChooseYourCards } from "@/components/ChooseYourCards";
 import { Contact } from "@/components/Contact";
 import { CounterData } from "@/components/CounterData";
+import { FacturationSystem } from "@/components/FacturationSystem";
 import { FirstBlock } from "@/components/FirstBlock";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -18,6 +20,8 @@ export default function Home() {
       </div>
       <CounterData />
       <About />
+      <FacturationSystem />
+      <Benefits />
       <Plans />
       <ChooseYourCards />
       <Services />

@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <footer className="relative dark:bg-black bg-slate-100" id="footer">
-      <div className=" py-4">
+      <div className="py-4">
         <div className="container px-6 md:px-4 mx-auto">
           <div className="-mx-4 flex flex-wrap justify-between">
             <div className="px-4 my-4 w-full xl:w-1/5">
@@ -198,6 +198,9 @@ export function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="border-[#3F3E45] dark:border-white border-[1px] my-7 w-[96rem]" />
       </div>
       <div className="py-4 text-gray-100">
         <div className="container mx-auto px-4">
