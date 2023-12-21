@@ -22,9 +22,30 @@ export function Services() {
   return (
     <div className="relative p-4 py-20 md:py-64" id="services">
       {isDark && <BackgroundRadialRight />}
-      <h2 className="text-4xl md:text-5xl py-2 font-bold text-center from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue mb-3 md:mb-24">
-        Soluciones de Negocio
-      </h2>
+      <div className="p-2 mx-auto mb-8 text-center lg:mb-12">
+        <div className="flex justify-center">
+          <Reveal>
+            <h1 className="mb-4 py-2 text-4xl md:text-5xl font-bold from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue">
+              Soluciones de Negocio
+            </h1>
+          </Reveal>
+        </div>
+        <div className="flex justify-center">
+          <Reveal>
+            <p className="mb-5 font-semibold text-grayDark dark:bg-blueLight degradedBlue sm:text-xl">
+              Llegamos para hacerte la vida más fácil
+            </p>
+          </Reveal>
+        </div>
+        <div className="flex justify-center mb-20">
+          <Reveal>
+            <p className="text-grayDark dark:text-primaryDark">
+              Todo lo que necesitas para tu negocio, en un solo lugar y con el{" "}
+              <br /> respaldo de MasyDase.
+            </p>
+          </Reveal>
+        </div>
+      </div>
       <div className="mt-10 flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
@@ -121,7 +142,7 @@ export function Services() {
         </MotionTransition>
         <div className="flex flex-col items-center justify-center p-6 md:p-8">
           <Reveal>
-            <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center">
+            <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center py-2">
               Diseño y desarrollo <br />
               de páginas web
             </h2>

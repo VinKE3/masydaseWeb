@@ -38,7 +38,7 @@ export function Footer() {
                 </h2>
               </div>
               <div className="flex flex-col text-grayDark dark:text-primaryDark ">
-                <div className="flex gap-2 ">
+                <div className="flex gap-2">
                   <Reveal>
                     <a
                       href="tel:850-123-5021"
@@ -47,15 +47,6 @@ export function Footer() {
                       className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                     >
                       (+51)987351513
-                    </a>
-                    <span>/</span>
-                    <a
-                      href="tel:850-123-5021"
-                      aria-label="Our phone"
-                      title="Our phone"
-                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                    >
-                      (+51)984799203
                     </a>
                   </Reveal>
                 </div>
@@ -67,16 +58,7 @@ export function Footer() {
                       title="Our phone"
                       className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
                     >
-                      (01)2873208
-                    </a>
-                    <span>/</span>
-                    <a
-                      href="tel:850-123-5021"
-                      aria-label="Our phone"
-                      title="Our phone"
-                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
-                    >
-                      (01)7765066
+                      (+51)984799203
                     </a>
                   </Reveal>
                 </div>
@@ -124,25 +106,21 @@ export function Footer() {
               <div className="flex gap-6">
                 <div className="flex flex-col text-grayDark dark:text-primaryDark">
                   <Reveal>
-                    {" "}
                     <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
                       E - MASY Comercials.
                     </p>
                   </Reveal>
                   <Reveal>
-                    {" "}
                     <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
                       E - MASY Farma.
                     </p>
                   </Reveal>
                   <Reveal>
-                    {" "}
                     <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
                       E - MASY Market.
                     </p>
                   </Reveal>
                   <Reveal>
-                    {" "}
                     <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
                       Utilcon 2020.02.
                     </p>
@@ -151,13 +129,11 @@ export function Footer() {
                 <div className="flex flex-col text-grayDark dark:text-primaryDark">
                   <div className="flex flex-col">
                     <Reveal>
-                      {" "}
                       <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
                         Diseño Web.
                       </p>
                     </Reveal>
                     <Reveal>
-                      {" "}
                       <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
                         Alojamiento CLOUD.
                       </p>
