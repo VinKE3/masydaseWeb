@@ -1,12 +1,13 @@
 "use client";
 import "swiper/css";
-import { BackgroundRadialRight } from "../BackgroundRadialRight";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { dataPartners } from "./Partners.data";
 import Image from "next/image";
 import { CtaDark } from "../CtaDark";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { BackgroundRadialLeft } from "../BackgroundRadialLeft";
 
 export function Partners() {
   const { theme } = useTheme();
@@ -22,10 +23,10 @@ export function Partners() {
   }
   return (
     <div
-      className="relative py-20 md:py-64 bg-slate-100 dark:bg-black"
+      className={`${isDark ? "" : "bg-slate-100"} relative px-6 py-20 md:py-64`}
       id="servicios"
     >
-      {isDark && <BackgroundRadialRight />}
+      {isDark && <BackgroundRadialLeft />}
       <div className="relative w-full overflow-hidden">
         <Swiper
           breakpoints={{
@@ -49,7 +50,7 @@ export function Partners() {
               >
                 <Image
                   src={`/assets/${image}`}
-                  alt="Parteners"
+                  alt="Partners"
                   width={70}
                   height={70}
                   className="h-[60px] w-[120px] object-contain"

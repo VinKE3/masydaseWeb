@@ -1,12 +1,11 @@
 "use client";
-
 import { MotionTransition } from "../MotionTransition";
 import { FaPhoneAlt, FaClock } from "react-icons/fa";
 import { IoHomeSharp } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { BackgroundRadialLeft } from "../BackgroundRadialLeft";
+import { BackgroundRadialRight } from "../BackgroundRadialRight";
 export function Contact() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
@@ -19,8 +18,8 @@ export function Contact() {
     return null;
   }
   return (
-    <div className="relative px-6 py-20 md:py-32" id="contact">
-      {isDark && <BackgroundRadialLeft />}
+    <div className="relative px-6 py-20 md:py-64" id="contact">
+      {isDark && <BackgroundRadialRight />}
       <div className="max-w-7xl mx-auto">
         <MotionTransition>
           <div className="my-12 mx-auto px-2 md:px-4">
