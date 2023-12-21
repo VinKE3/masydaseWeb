@@ -9,7 +9,7 @@ export function Footer() {
   const copyright = year > 1998 ? `1998 - ${year}` : "2024";
 
   return (
-    <footer className="relative dark:bg-black bg-slate-100" id="footer">
+    <footer className="relative dark:bg-black bg-slate-100 pt-20" id="footer">
       <div className="py-4">
         <div className="container px-6 md:px-4 mx-auto">
           <div className="-mx-4 flex flex-wrap justify-between">

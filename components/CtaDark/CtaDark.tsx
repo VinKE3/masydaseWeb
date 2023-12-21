@@ -4,7 +4,7 @@ import { Reveal } from "../Reveal";
 export function CtaDark() {
   return (
     <div className="px-6 my-20 md:mt-36">
-      <div className="max-w-7xl px-4 py-6 mx-auto border-transparent bg-gradient-to-r from-slate-200 to-slate-400 dark:bg-radialBlack md:px-16 md:py-12 shadow-dark rounded-3xl">
+      <div className="max-w-7xl px-4 py-6 mx-auto border-transparent bg-gradient-to-r from-slate-200/5 to-slate-300 dark:bg-radialBlack md:px-16 md:py-12 shadow-dark rounded-3xl">
         <div className="grid items-center md:grid-cols-2">
           <div className="my-8">
             <Reveal>

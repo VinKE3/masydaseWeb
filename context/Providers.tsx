@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import { ThemeProvider } from "next-themes";
 import { FC, ReactNode } from "react";
 
@@ -7,8 +8,14 @@ interface ProvidersProps {
 }
 
 const Providers: FC<ProvidersProps> = ({ children }) => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.removeItem("theme");
+    }
+  }, []);
+
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={true}>
       {children}
     </ThemeProvider>
   );
