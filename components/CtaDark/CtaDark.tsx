@@ -8,7 +8,7 @@ export function CtaDark() {
         <div className="grid items-center md:grid-cols-2">
           <div className="my-8">
             <Reveal>
-              <h3 className="text-3xl text-blue dark:text-white font-bold">
+              <h3 className="text-3xl text-azul dark:text-white font-bold">
                 Ven a probar nuestros servicios
               </h3>
             </Reveal>
@@ -21,7 +21,7 @@ export function CtaDark() {
 
           <Link
             href="#contact"
-            className="px-4 py-3 mx-auto text-white rounded-md dark:bg-blueRadial bg-primary hover:bg-blue"
+            className="px-4 py-3 mx-auto text-white rounded-md dark:bg-blueRadial bg-primary hover:bg-azul"
           >
             <Reveal>Empieza ahora</Reveal>
           </Link>

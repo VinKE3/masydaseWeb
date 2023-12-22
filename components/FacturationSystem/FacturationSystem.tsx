@@ -24,7 +24,7 @@ export function FacturationSystem() {
         <div className="p-2 mx-auto mb-8 text-center lg:mb-12">
           <div className="flex justify-center">
             <Reveal>
-              <h1 className="mb-4 text-4xl md:text-5xl font-bold from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue">
+              <h1 className="mb-4 text-4xl md:text-5xl font-bold from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
                 Soluciones de Facturación Electrónica
               </h1>
             </Reveal>

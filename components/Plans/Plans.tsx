@@ -27,7 +27,7 @@ export function Plans() {
         <MotionTransition>
           <section className="text-white body-font overflow-hidden">
             <div className="p-2 mx-auto mb-8 text-center lg:mb-12">
-              <h2 className="mb-4 text-4xl md:text-5xl font-bold from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue">
+              <h2 className="mb-4 text-4xl md:text-5xl font-bold from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
                 Planes Empresariales
               </h2>
               <p className="mb-5 text-grayDark dark:text-primaryDark sm:text-xl">
@@ -36,7 +36,7 @@ export function Plans() {
               </p>
             </div>
             <div className=" px-5 py-12 mx-auto flex flex-wrap">
-              <div className="flex w-full flex-wrap lg:border border-gray rounded-lg">
+              <div className="flex w-full flex-wrap lg:border border-grayDark rounded-lg">
                 <div className="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-grayDark lg:border-none rounded-lg lg:rounded-none">
                   <div className="px-2 text-center h-48 flex flex-col items-center justify-center">
                     <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium leading-none mb-4 mt-2">
@@ -90,7 +90,7 @@ export function Plans() {
                   </h1>
                 </div>
                 <div className="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-grayDark dark:border-primaryDark border-2 rounded-lg relative">
-                  <span className="bg-blue dark:bg-blueRadial text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+                  <span className="bg-azul dark:bg-blueRadial text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
                     POPULAR
                   </span>
                   <div className="px-2 text-center h-48 flex flex-col items-center justify-center">
@@ -202,7 +202,7 @@ export function Plans() {
           <div className="flex items-center justify-center h-full">
             <Link
               href="#contact"
-              className="flex items-center justify-center mt-auto bg-primary hover:bg-blue  text-white dark:bg-blueRadial border-0 py-2 px-4 focus:outline-none rounded"
+              className="flex items-center justify-center mt-auto bg-primary hover:bg-azul  text-white dark:bg-blueRadial border-0 py-2 px-4 focus:outline-none rounded"
             >
               Consulta por tu plan
               <svg

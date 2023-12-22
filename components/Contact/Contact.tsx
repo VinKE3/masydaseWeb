@@ -26,7 +26,7 @@ export function Contact() {
             <section className="mb-32">
               <div className="flex justify-center">
                 <div className="text-center md:max-w-xl lg:max-w-3xl">
-                  <h2 className="mb-12 px-6 text-4xl md:text-5xl p-4 from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent font-bold dark:bg-blueRadial degradedBlue">
+                  <h2 className="mb-12 px-6 text-4xl md:text-5xl p-4 from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent font-bold dark:bg-blueRadial degradedBlue">
                     Contactanos
                   </h2>
                 </div>
@@ -80,7 +80,7 @@ export function Contact() {
 
                   <button
                     type="button"
-                    className="mb-6 inline-block w-full rounded  dark:bg-blueRadial bg-primary hover:bg-blue px-6 py-2.5 font-medium uppercase leading-normal  text-white hover:shadow-md"
+                    className="mb-6 inline-block w-full rounded  dark:bg-blueRadial bg-primary hover:bg-azul px-6 py-2.5 font-medium uppercase leading-normal  text-white hover:shadow-md"
                   >
                     Enviar
                   </button>
@@ -96,7 +96,7 @@ export function Contact() {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white text-blue">
+                          <p className="mb-2 font-bold dark:text-white text-azul">
                             Soporte Tecnico
                           </p>
                           <p className="dark:text-primaryDark text-grayDark ">
@@ -122,7 +122,7 @@ export function Contact() {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white text-blue">
+                          <p className="mb-2 font-bold dark:text-white text-azul">
                             Dirección
                           </p>
                           <p className="dark:text-primaryDark text-gray-500 ">
@@ -139,7 +139,7 @@ export function Contact() {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white text-blue">
+                          <p className="mb-2 font-bold dark:text-white text-azul">
                             Emails
                           </p>
                           <div className="flex flex-col">
@@ -173,7 +173,7 @@ export function Contact() {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white text-blue">
+                          <p className="mb-2 font-bold dark:text-white text-azul">
                             Horario de atención
                           </p>
                           <p className="dark:text-primaryDark text-grayDark">
@@ -193,7 +193,7 @@ export function Contact() {
           <section className="mb-32">
             <div className="flex justify-center">
               <div className="text-center md:max-w-xl lg:max-w-3xl">
-                <h2 className="mb-12 px-6 text-4xl md:text-5xl p-4 from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent font-bold dark:bg-blueRadial degradedBlue">
+                <h2 className="mb-12 px-6 text-4xl md:text-5xl p-4 from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent font-bold dark:bg-blueRadial degradedBlue">
                   Contactanos
                 </h2>
               </div>
@@ -215,7 +215,7 @@ export function Contact() {
               ></iframe>
             </div>
             <div className="container px-6 md:px-12">
-              <div className="block rounded-lg dark:bg-black bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray">
+              <div className="block rounded-lg dark:bg-black bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-grayDark">
                 <div className="flex flex-wrap">
                   <form className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                     <div className="mb-3 w-full">
@@ -265,7 +265,7 @@ export function Contact() {
 
                     <button
                       type="button"
-                      className="mb-6 inline-block w-full rounded  dark:bg-blueRadial bg-primary hover:bg-blue px-6 py-2.5 font-medium uppercase leading-normal  text-white hover:shadow-md"
+                      className="mb-6 inline-block w-full rounded  dark:bg-blueRadial bg-primary hover:bg-azul px-6 py-2.5 font-medium uppercase leading-normal  text-white hover:shadow-md"
                     >
                       Enviar
                     </button>
@@ -281,7 +281,7 @@ export function Contact() {
                             </div>
                           </div>
                           <div className="ml-6 grow">
-                            <p className="mb-2 font-bold dark:text-white text-blue">
+                            <p className="mb-2 font-bold dark:text-white text-azul">
                               Soporte Tecnico
                             </p>
                             <p className="dark:text-primaryDark text-grayDark ">
@@ -307,7 +307,7 @@ export function Contact() {
                             </div>
                           </div>
                           <div className="ml-6 grow">
-                            <p className="mb-2 font-bold dark:text-white text-blue">
+                            <p className="mb-2 font-bold dark:text-white text-azul">
                               Dirección
                             </p>
                             <p className="dark:text-primaryDark text-gray-500 ">
@@ -324,7 +324,7 @@ export function Contact() {
                             </div>
                           </div>
                           <div className="ml-6 grow">
-                            <p className="mb-2 font-bold dark:text-white text-blue">
+                            <p className="mb-2 font-bold dark:text-white text-azul">
                               Emails
                             </p>
                             <div className="flex flex-col">
@@ -358,7 +358,7 @@ export function Contact() {
                             </div>
                           </div>
                           <div className="ml-6 grow">
-                            <p className="mb-2 font-bold dark:text-white text-blue">
+                            <p className="mb-2 font-bold dark:text-white text-azul">
                               Horario de atención
                             </p>
                             <p className="dark:text-primaryDark text-grayDark">

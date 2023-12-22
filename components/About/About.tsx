@@ -32,7 +32,7 @@ export function About() {
               <span className="block degradedBlue text-grayDark dark:bg-blueLight">
                 Nos presentan un problema
               </span>
-              <span className="block degradedBlue text-blue dark:text-white">
+              <span className="block degradedBlue text-azul dark:text-white">
                 nosotros encontramos <br />
                 <span className="text-grayDark degradedBlue dark:text-white">
                   la mejor solución
@@ -41,7 +41,7 @@ export function About() {
             </h2>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 dark:text-primaryDark text-gray">
+            <p className="max-w-md mt-10 dark:text-primaryDark text-grayDark">
               En MASYDASE, somos un equipo joven dedicado a la programación de
               sistemas convertidas en soluciones, y que brinda soporte técnico a
               más de 350 empresas nacionales, desde 1998.
@@ -51,7 +51,7 @@ export function About() {
             <div className="my-8">
               <Link
                 href="#plans"
-                className="px-4 py-3 rounded-md bg-primary text-white hover:bg-blue dark:bg-blueRadial"
+                className="px-4 py-3 rounded-md bg-primary text-white hover:bg-azul dark:bg-blueRadial"
               >
                 Elige tu plan
               </Link>
@@ -64,9 +64,9 @@ export function About() {
             return (
               <Reveal key={id}>
                 <div className="grid grid-flow-col gap-5 px-4 py-2 rounded-3xl group hover:bg-slate-100 dark:hover:bg-radialBlack">
-                  <Icon className="h-8 w-8 text-blue dark:text-secondary" />
+                  <Icon className="h-8 w-8 text-azul dark:text-secondary" />
                   <div>
-                    <h4 className="dark:text-white font-semibold text-blue">
+                    <h4 className="dark:text-white font-semibold text-azul">
                       {title}
                     </h4>
                     <p className="dark:text-primaryDark text-grayDark">

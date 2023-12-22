@@ -30,14 +30,14 @@ export function FirstBlock() {
               Transformamos
               <br />
               ideas en
-              <span className="block text-blue degradedBlue dark:bg-blueLight">
+              <span className="block text-azul degradedBlue dark:bg-blueLight">
                 soluciones ágiles
               </span>
               de confianza
             </h1>
           </Reveal>
           <Reveal>
-            <p className="max-w-md mt-10 dark:text-primaryDark text-gray">
+            <p className="max-w-md mt-10 dark:text-primaryDark text-grayDark">
               Nuestro equipo de expertos en tecnología y finanzas, te ayudarán a
               transformar tu negocio y a mejorar tus procesos de facturación
               para que puedas enfocarte en lo que realmente importa.
@@ -47,7 +47,7 @@ export function FirstBlock() {
             <div className="my-8">
               <Link
                 href="#contact"
-                className="px-4 py-3 rounded-md text-white bg-primary hover:bg-blue dark:bg-blueRadial"
+                className="px-4 py-3 rounded-md text-white bg-primary hover:bg-azul dark:bg-blueRadial"
               >
                 Contactanos
               </Link>

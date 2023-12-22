@@ -34,7 +34,7 @@ export function ChooseYourCards() {
         <Reveal>
           <h2 className="text-4xl md:text-5xl font-semibold text-grayDark dark:text-white">
             Elige el sistema Coorporativo
-            <span className="block degradedBlue dark:bg-blueLight text-blue">
+            <span className="block degradedBlue dark:bg-blueLight text-azul">
               que se adapte mejor a tus necesidades
             </span>
           </h2>

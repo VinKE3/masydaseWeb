@@ -12,10 +12,10 @@ const config: Config = {
       colors: {
         primaryLight: "rgba(255,255,255, 0.3);",
         primaryDark: "rgba(255,255,255, 0.7);",
-        gray: "rgb(135, 143, 147)",
+        gris: "rgb(135, 143, 147)",
         grayDark: "rgb(124, 124, 132)",
         primary: "rgb(36, 131, 171)",
-        blue: "rgb(11, 60, 108)",
+        azul: "rgb(11, 60, 108)",
         secondary: "#6DE4E8",
         gradient:
           "linear-gradient(90deg, #6de4e8 0%, rgba(0, 178, 218, 0.6) 95.83%)",

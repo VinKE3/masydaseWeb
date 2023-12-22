@@ -58,7 +58,7 @@ export function Header() {
               >
                 <Link
                   href={idLink}
-                  className="text-lg hover:text-primary dark:hover:text-secondary text-grayDark dark:text-white"
+                  className="text-lg hover:text-azul dark:hover:text-secondary text-grayDark dark:text-white"
                   onClick={() => setOpenMobileMenu(false)}
                 >
                   {name}

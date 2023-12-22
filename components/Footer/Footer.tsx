@@ -33,7 +33,7 @@ export function Footer() {
 
             <div className="px-4 my-4 w-full sm:w-auto">
               <div>
-                <h2 className="inline-block text-2xl pb-4 mb-4 dark:pb-4 dark:mb-4 border-b-4 dark:border-white border-grayDark from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
+                <h2 className="inline-block text-2xl pb-4 mb-4 dark:pb-4 dark:mb-4 border-b-4 dark:border-white border-grayDark from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
                   Contacto
                 </h2>
               </div>
@@ -44,7 +44,7 @@ export function Footer() {
                       href="tel:850-123-5021"
                       aria-label="Our phone"
                       title="Our phone"
-                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-azul"
                     >
                       (+51)987351513
                     </a>
@@ -56,20 +56,20 @@ export function Footer() {
                       href="tel:850-123-5021"
                       aria-label="Our phone"
                       title="Our phone"
-                      className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-azul"
                     >
                       (+51)984799203
                     </a>
                   </Reveal>
                 </div>
               </div>
-              <div className="flex flex-col text-gray dark:text-primaryDark">
+              <div className="flex flex-col text-grayDark dark:text-primaryDark">
                 <Reveal>
                   <a
                     href="mailto:ventas@masydase.com"
                     aria-label="ventasMail"
                     title="ventasMail"
-                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                    className="transition-colors duration-300 dark:hover:text-white hover:text-azul"
                   >
                     ventas@masydase.com
                   </a>
@@ -80,7 +80,7 @@ export function Footer() {
                     href="mailto:sistemas@masydase.com"
                     aria-label="sistemasMail"
                     title="sistemasMail"
-                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                    className="transition-colors duration-300 dark:hover:text-white hover:text-azul"
                   >
                     sistemas@masydase.com
                   </a>
@@ -90,7 +90,7 @@ export function Footer() {
                     href="mailto:info@lorem.mail"
                     aria-label="infoMail"
                     title="infoMail"
-                    className="transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                    className="transition-colors duration-300 dark:hover:text-white hover:text-azul"
                   >
                     info@masydase.com
                   </a>
@@ -99,7 +99,7 @@ export function Footer() {
             </div>
             <div className="px-4 my-4 w-full sm:w-auto">
               <div>
-                <h2 className="inline-block text-2xl pb-4 mb-4 dark:pb-4 dark:mb-4 border-b-4 dark:border-white border-grayDark from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
+                <h2 className="inline-block text-2xl pb-4 mb-4 dark:pb-4 dark:mb-4 border-b-4 dark:border-white border-grayDark from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
                   Soluciones de Negocios
                 </h2>
               </div>
@@ -154,7 +154,7 @@ export function Footer() {
             </div>
             <div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
               <div>
-                <h2 className="inline-block text-2xl pb-4 mb-4 dark:pb-4 dark:mb-4 border-b-4 dark:border-white border-grayDark from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
+                <h2 className="inline-block text-2xl pb-4 mb-4 dark:pb-4 dark:mb-4 border-b-4 dark:border-white border-grayDark from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
                   Contactanos en Redes
                 </h2>
               </div>
@@ -164,7 +164,7 @@ export function Footer() {
                     <Link
                       key={id}
                       href={link}
-                      className="text-2xl transition-colors duration-300 dark:hover:text-white hover:text-blue"
+                      className="text-2xl transition-colors duration-300 dark:hover:text-white hover:text-azul"
                     >
                       {icon}
                     </Link>
@@ -178,7 +178,7 @@ export function Footer() {
       <div className="flex justify-center">
         <div className="border-[#3F3E45] dark:border-white border-[1px] my-7 w-[96rem]" />
       </div>
-      <div className="py-4 text-gray-100">
+      <div className="py-4">
         <div className="container mx-auto px-4">
           <div className="-mx-4 flex flex-wrap justify-between">
             <Reveal>
@@ -190,7 +190,7 @@ export function Footer() {
             <div className="flex items-center justify-center px-4 w-full text-center sm:w-auto sm:text-left gap-2">
               <div>Made with ❤️ by </div>
               <Reveal>
-                <span className="from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
+                <span className="from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
                   VinKE.
                 </span>
               </Reveal>

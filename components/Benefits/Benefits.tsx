@@ -32,7 +32,7 @@ export default function Benefits() {
               <div className="p-2 mx-auto mb-8 text-center lg:mb-12">
                 <div className="flex justify-center">
                   <Reveal>
-                    <h1 className="mb-4 text-4xl md:text-5xl font-bold from-primary to-blue bg-gradient-to-r bg-clip-text text-transparent text-blue block dark:bg-blueRadial degradedBlue">
+                    <h1 className="mb-4 text-4xl md:text-5xl font-bold from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
                       Beneficios
                     </h1>
                   </Reveal>
@@ -48,8 +48,8 @@ export default function Benefits() {
               </div>
               <MotionTransition>
                 <div className="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-3 lg:mt-20">
-                  <div className="transition-all duration-1000 dark:bg-cyan-600 dark:hover:bg-cyan-800 bg-white hover:bg-blue  hover:shadow-xl m-2 p-4 relative z-40 group  ">
-                    <div className="absolute dark:bg-white dark:group-hover:bg-cyan-600 bg-blue/80 top-0 left-0 w-24 h-1 z-30  transition-all duration-200 group-hover:bg-white group-hover:w-1/2  "></div>
+                  <div className="transition-all duration-1000 dark:bg-cyan-600 dark:hover:bg-cyan-800 bg-white hover:bg-azul  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                    <div className="absolute dark:bg-white dark:group-hover:bg-cyan-600 bg-azul/80 top-0 left-0 w-24 h-1 z-30  transition-all duration-200 group-hover:bg-white group-hover:w-1/2  "></div>
                     <div className="py-2 px-9 relative  ">
                       <h3 className="mt-8 text-lg font-semibold text-grayDark group-hover:text-white dark:text-white">
                         Seguridad y Confiabilidad
@@ -61,8 +61,8 @@ export default function Benefits() {
                       </p>
                     </div>
                   </div>
-                  <div className="transition-all duration-1000 dark:bg-cyan-600 dark:hover:bg-cyan-800 bg-white hover:bg-blue  hover:shadow-xl m-2 p-4 relative z-40 group  ">
-                    <div className="absolute dark:bg-white dark:group-hover:bg-cyan-600 bg-blue/80 top-0 left-0 w-24 h-1 z-30  transition-all duration-200 group-hover:bg-white group-hover:w-1/2  "></div>
+                  <div className="transition-all duration-1000 dark:bg-cyan-600 dark:hover:bg-cyan-800 bg-white hover:bg-azul  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                    <div className="absolute dark:bg-white dark:group-hover:bg-cyan-600 bg-azul/80 top-0 left-0 w-24 h-1 z-30  transition-all duration-200 group-hover:bg-white group-hover:w-1/2  "></div>
                     <div className="py-2 px-9 relative  ">
                       <h3 className="mt-8 text-lg font-semibold text-grayDark group-hover:text-white dark:text-white">
                         Soporte y Asesoría Técnica
@@ -74,8 +74,8 @@ export default function Benefits() {
                       </p>
                     </div>
                   </div>
-                  <div className="transition-all duration-1000 dark:bg-cyan-600 dark:hover:bg-cyan-800 bg-white hover:bg-blue  hover:shadow-xl m-2 p-4 relative z-40 group  ">
-                    <div className="absolute dark:bg-white dark:group-hover:bg-cyan-600 bg-blue/80 top-0 left-0 w-24 h-1 z-30  transition-all duration-200 group-hover:bg-white group-hover:w-1/2  "></div>
+                  <div className="transition-all duration-1000 dark:bg-cyan-600 dark:hover:bg-cyan-800 bg-white hover:bg-azul  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                    <div className="absolute dark:bg-white dark:group-hover:bg-cyan-600 bg-azul/80 top-0 left-0 w-24 h-1 z-30  transition-all duration-200 group-hover:bg-white group-hover:w-1/2  "></div>
                     <div className="py-2 px-9 relative  ">
                       <h3 className="mt-8 text-lg font-semibold text-grayDark group-hover:text-white dark:text-white">
                         Platafora Web de Facturas Electrónicas
