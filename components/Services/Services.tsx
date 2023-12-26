@@ -218,7 +218,7 @@ export function Services() {
       <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
-            src="/assets/cloud2.png"
+            src="/assets/cloud3.png"
             alt="Control Business"
             width="480"
             height={411}

@@ -285,12 +285,6 @@ export function Contact() {
                               Soporte Tecnico
                             </p>
                             <p className="dark:text-primaryDark text-grayDark ">
-                              (01)2873208
-                            </p>
-                            <p className="dark:text-primaryDark text-grayDark ">
-                              (01)7765066
-                            </p>
-                            <p className="dark:text-primaryDark text-grayDark ">
                               (+51)987351513
                             </p>
                             <p className="dark:text-primaryDark text-grayDark ">

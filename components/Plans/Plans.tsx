@@ -51,6 +51,9 @@ export function Plans() {
                         /Mes
                       </span>
                     </h2>
+                    <h5 className="text-grayDark underline  dark:text-white text-xs">
+                      No Incluye IGV
+                    </h5>
                   </div>
                   <h1 className="text-center h-12 flex items-center justify-center">
                     <p className="dark:text-primaryDark text-grayDark px-2">
@@ -101,11 +104,14 @@ export function Plans() {
                       Hasta 1000 comprabantes al mes
                     </span>
                     <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
-                      S/139.90
+                      S/118
                       <span className="dark:bg-blueLight degradedBlue text-grayDark text-base ml-1">
                         /Mes
                       </span>
                     </h2>
+                    <h5 className="text-grayDark underline dark:text-white text-xs">
+                      Incluye IGV
+                    </h5>
                   </div>
                   <h1 className="text-center h-12 flex items-center justify-center">
                     <p className="dark:text-primaryDark text-grayDark px-2">
@@ -153,11 +159,14 @@ export function Plans() {
                       Comprobantes Ilimitados
                     </span>
                     <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
-                      S/244.90
+                      S/177
                       <span className="dark:bg-blueLight degradedBlue text-grayDark text-base ml-1">
                         /Mes
                       </span>
                     </h2>
+                    <h5 className="text-grayDark underline dark:text-white text-xs">
+                      Incluye IGV
+                    </h5>
                   </div>
                   <h1 className="text-center h-12 flex items-center justify-center">
                     <p className="dark:text-primaryDark text-grayDark px-2">
