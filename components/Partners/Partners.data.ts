@@ -1,7 +1,7 @@
 export const dataPartners = [
   {
     id: 1,
-    image: "ARTCOLORS.png",
+    image: "farai.png",
   },
   {
     id: 2,
@@ -9,7 +9,7 @@ export const dataPartners = [
   },
   {
     id: 3,
-    image: "MEGAPAPER.png",
+    image: "machu.png",
   },
   {
     id: 4,

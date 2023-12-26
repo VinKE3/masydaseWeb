@@ -245,8 +245,38 @@ export function Services() {
       <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
+            src="/assets/vps.jpg"
+            alt="vps"
+            width="480"
+            height={411}
+            className="w-full h-auto"
+          />
+        </MotionTransition>
+        <div className="flex flex-col items-center justify-center p-6 md:p-8">
+          <Reveal>
+            <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center">
+              Alojamiento <br />
+              VPS
+            </h2>
+          </Reveal>
+          <Reveal>
+            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark text-center">
+              Ofrecemos un servicio VPS con un rendimiento superior respaldado
+              por servidores potentes y recursos de calidad, garantiza un tiempo
+              de actividad del 99.9%, proporcionamos una interfaz fácil de usar
+              y soporte técnico garantizado. Destacamos por las medidas de
+              seguridad avanzadas, opciones de escalabilidad y tarifas
+              competitivas. Implementanmos mejoras constantes para mandatener a
+              nuestros clientes satisfechos.
+            </p>
+          </Reveal>
+        </div>
+      </div>
+      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
+        <MotionTransition className="flex-1 p-6 md:p-8">
+          <Image
             src="/assets/control-business.png"
-            alt="Control Business"
+            alt="diseñoWeb"
             width="480"
             height={411}
             className="w-full h-auto"

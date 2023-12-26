@@ -51,7 +51,7 @@ export function Plans() {
                         /Mes
                       </span>
                     </h2>
-                    <h5 className="text-grayDark underline  dark:text-white text-xs">
+                    <h5 className="text-grayDark underline dark:text-white text-xs">
                       No Incluye IGV
                     </h5>
                   </div>
@@ -141,7 +141,7 @@ export function Plans() {
                     <p className="dark:text-primaryDark text-grayDark px-2">
                       Guias de Remision
                     </p>
-                    <CheckIcon />
+                    <XIcon />
                   </h1>
                   <h1 className="text-grayDark text-center h-12 flex items-center justify-center">
                     <p className="dark:text-primaryDark text-grayDark px-2">
@@ -202,7 +202,7 @@ export function Plans() {
                     <p className="dark:text-primaryDark text-grayDark px-2">
                       Certificado Digital
                     </p>
-                    <CheckIcon />
+                    <XIcon />
                   </h1>
                 </div>
               </div>

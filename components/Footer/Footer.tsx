@@ -62,6 +62,18 @@ export function Footer() {
                     </a>
                   </Reveal>
                 </div>
+                <div className="flex gap-2">
+                  <Reveal>
+                    <a
+                      href="tel:850-123-5021"
+                      aria-label="Our phone"
+                      title="Our phone"
+                      className="transition-colors duration-300 dark:hover:text-white hover:text-azul"
+                    >
+                      (+51)936072443
+                    </a>
+                  </Reveal>
+                </div>
               </div>
               <div className="flex flex-col text-grayDark dark:text-primaryDark">
                 <Reveal>
@@ -122,7 +134,12 @@ export function Footer() {
                   </Reveal>
                   <Reveal>
                     <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                      Utilcon 2020.02.
+                      UtilCon 2023.01
+                    </p>
+                  </Reveal>
+                  <Reveal>
+                    <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                      Servidor VPS
                     </p>
                   </Reveal>
                 </div>
