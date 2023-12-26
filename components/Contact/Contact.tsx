@@ -8,12 +8,7 @@ import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { sendEmail } from "@/actions/sendEmail";
 
-type ContactFormEmailProps = {
-  mensaje: string;
-  name: string;
-  email: string;
-};
-export function Contact({ name, email, mensaje }: ContactFormEmailProps) {
+export function Contact() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const [hasMounted, setHasMounted] = useState(false);
