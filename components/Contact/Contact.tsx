@@ -7,11 +7,28 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { sendEmail } from "@/actions/sendEmail";
+import toast from "react-hot-toast";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { userSchema } from "@/validations/userSchema";
 
+type inputs = {
+  name: "";
+  email: "";
+  mensaje: "";
+};
 export function Contact() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const [hasMounted, setHasMounted] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<inputs>({
+    resolver: zodResolver(userSchema),
+  });
+  console.log(errors);
   useEffect(() => {
     setHasMounted(true);
   }, []);
@@ -19,6 +36,12 @@ export function Contact() {
   if (!hasMounted) {
     return null;
   }
+
+  type inputs = {
+    name: "";
+    email: "";
+    mensaje: "";
+  };
 
   return (
     <div className="relative px-6 py-20 md:py-32" id="contact">
@@ -53,9 +76,20 @@ export function Contact() {
               <div className="block rounded-lg dark:bg-black bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-grayDark">
                 <div className="flex flex-wrap">
                   <form
-                    action={async (formData) => {
-                      await sendEmail(formData);
-                    }}
+                    // action={async (formData) => {
+                    //   const { data, error } = await sendEmail(formData);
+
+                    //   if (error) {
+                    //     toast.error(error);
+                    //     return;
+                    //   }
+                    //   console.log(data);
+                    //   console.log(formData);
+                    //   formData.values();
+                    //   toast.success("Email sent successfully!");
+                    //   console.log("Email sent successfully!");
+                    // }}
+                    onSubmit={handleSubmit((data) => console.log(data))}
                     className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6"
                   >
                     <div className="mb-3 w-full">
@@ -70,8 +104,16 @@ export function Contact() {
                         className="px-2 py-2 border w-full outline-none rounded-md dark:text-white text-gray-950"
                         id="name"
                         placeholder="Nombre"
-                        name="name"
+                        {...register("name")}
                       />
+                      {
+                        //@ts-ignore
+                        errors.name && (
+                          <span className="text-red-500">
+                            {errors.name.message}
+                          </span>
+                        )
+                      }
                     </div>
 
                     <div className="mb-3 w-full">
@@ -86,8 +128,16 @@ export function Contact() {
                         className="px-2 py-2 border w-full outline-none rounded-md dark:text-white text-gray-950"
                         id="email"
                         placeholder="Ingrese su email"
-                        name="email"
+                        {...register("email")}
                       />
+                      {
+                        //@ts-ignore
+                        errors.email && (
+                          <span className="text-red-500">
+                            {errors.email.message}
+                          </span>
+                        )
+                      }
                     </div>
 
                     <div className="mb-3 w-full">
@@ -99,10 +149,19 @@ export function Contact() {
                       </label>
                       <textarea
                         className="px-2 py-2 border rounded-[5px] w-full outline-none dark:text-white text-gray-950"
-                        name="mensaje"
                         id="mensaje"
                         placeholder="Ingrese su mensaje"
+                        rows={4}
+                        {...register("mensaje")}
                       ></textarea>
+                      {
+                        //@ts-ignore
+                        errors.mensaje && (
+                          <span className="text-red-500">
+                            {errors.mensaje.message}
+                          </span>
+                        )
+                      }
                     </div>
 
                     <button
