@@ -7,7 +7,8 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { sendEmail } from "@/actions/sendEmail";
-import toast from "react-hot-toast";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { userSchema } from "@/validations/userSchema";
@@ -39,8 +40,18 @@ export function Contact() {
   useEffect(() => {
     if (isSubmitSuccessful) {
       reset();
-      toast.success("Mensaje enviado correctamente");
-      alert("Mensaje enviado correctamente");
+      const titulo = "Mensaje enviado correctamente";
+      toast.success(titulo, {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        toastId: "toastTipoCambio",
+      });
     }
   }, [isSubmitSuccessful, reset]);
 
@@ -49,18 +60,29 @@ export function Contact() {
   }
 
   const onSubmit: SubmitHandler<inputs> = async (data) => {
-    const { name, email, mensaje } = data;
     // le paso los datos a la funcion que envia el email
     try {
       await sendEmail(data);
-      toast.success("Mensaje enviado correctamente");
+      // const titulo = "Mensaje enviado correctamente";
+      // toast.success(titulo, {
+      //   position: "bottom-right",
+      //   autoClose: 3000,
+      //   hideProgressBar: true,
+      //   closeOnClick: true,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      //   theme: "colored",
+      //   toastId: "toastTipoCambio",
+      // });
     } catch (error) {
-      toast.error("Hubo un error al enviar el mensaje");
+      console.log(error);
     }
   };
 
   return (
     <div className="relative px-6 py-20 md:py-32" id="contact">
+      <ToastContainer />
       {isDark && <BackgroundRadialRight />}
       <div className="max-w-7xl mx-auto">
         <MotionTransition>
