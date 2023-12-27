@@ -1,62 +1,37 @@
 "use server";
 
 import { Resend } from "resend";
-import { validateString, getErrorMessage } from "@/lib/utlis";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// export const sendEmail1 = async (formData: FormData) => {
-//   const name = formData.get("name");
-//   const email = formData.get("email");
-//   const mensaje = formData.get("mensaje");
-//   resend.emails.send({
-//     from: "onboarding@resend.dev",
-//     to: "harquin09@gmail.com",
-//     subject: name as string,
-//     reply_to: email as string,
-//     text: mensaje as string,
-//   });
-// };
+interface data {
+  name: string;
+  email: string;
+  mensaje: string;
+}
+export const sendEmail = async (data: data) => {
+  console.log("aqui");
+  const { name, email, mensaje } = data;
+  console.log(data, "sendEmail");
+  const nameField = name ? name : "No name";
+  const emailField = email ? email : "No email";
+  const mensajeField = mensaje ? mensaje : "No mensaje";
 
-export const sendEmail = async (formData: FormData) => {
-  const name = formData.get("name");
-  const email = formData.get("email");
-  const mensaje = formData.get("mensaje");
-
-  if (!validateString(name, 500)) {
-    return {
-      error: "Invalid sender email",
-    };
-  }
-  if (!validateString(email, 5000)) {
-    return {
-      error: "Invalid message",
-    };
-  }
-  if (!validateString(mensaje, 5000)) {
-    return {
-      error: "Invalid message",
-    };
-  }
-
-  let data;
+  let dato;
   try {
-    data = await resend.emails.send({
+    dato = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "harquin09@gmail.com",
-      subject: name,
-      reply_to: email,
-      text: mensaje,
+      subject: nameField,
+      reply_to: emailField,
+      text: mensajeField,
     });
   } catch (error: unknown) {
     return {
-      error: getErrorMessage(error),
+      error: error,
     };
-  } finally {
-    // quiero resetear los campos del formulario
   }
-
   return {
-    data,
+    dato,
   };
 };

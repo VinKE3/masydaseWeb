@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { userSchema } from "@/validations/userSchema";
 
@@ -17,6 +17,7 @@ type inputs = {
   email: "";
   mensaje: "";
 };
+
 export function Contact() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
@@ -24,23 +25,34 @@ export function Contact() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
+    formState: { isSubmitSuccessful },
   } = useForm<inputs>({
     resolver: zodResolver(userSchema),
   });
-  console.log(errors);
+
   useEffect(() => {
     setHasMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset();
+      alert("Mensaje enviado correctamente");
+      toast.success("Mensaje enviado correctamente");
+    }
+  }, [isSubmitSuccessful, reset]);
 
   if (!hasMounted) {
     return null;
   }
 
-  type inputs = {
-    name: "";
-    email: "";
-    mensaje: "";
+  const onSubmit: SubmitHandler<inputs> = async (data) => {
+    const { name, email, mensaje } = data;
+    console.log(name, email, mensaje);
+    // le paso los datos a la funcion que envia el email
+    await sendEmail(data);
   };
 
   return (
@@ -76,20 +88,7 @@ export function Contact() {
               <div className="block rounded-lg dark:bg-black bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-grayDark">
                 <div className="flex flex-wrap">
                   <form
-                    // action={async (formData) => {
-                    //   const { data, error } = await sendEmail(formData);
-
-                    //   if (error) {
-                    //     toast.error(error);
-                    //     return;
-                    //   }
-                    //   console.log(data);
-                    //   console.log(formData);
-                    //   formData.values();
-                    //   toast.success("Email sent successfully!");
-                    //   console.log("Email sent successfully!");
-                    // }}
-                    onSubmit={handleSubmit((data) => console.log(data))}
+                    onSubmit={handleSubmit(onSubmit)}
                     className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6"
                   >
                     <div className="mb-3 w-full">
@@ -168,7 +167,10 @@ export function Contact() {
                       type="submit"
                       className="mb-6 inline-block w-full rounded  dark:bg-blueRadial bg-primary hover:bg-azul px-6 py-2.5 font-medium uppercase leading-normal  text-white hover:shadow-md"
                     >
-                      Enviar
+                      {
+                        //@ts-ignore
+                        !isSubmitSuccessful ? "Enviar" : "Email enviado"
+                      }
                     </button>
                   </form>
 
