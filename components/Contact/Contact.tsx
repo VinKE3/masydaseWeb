@@ -39,8 +39,8 @@ export function Contact() {
   useEffect(() => {
     if (isSubmitSuccessful) {
       reset();
-      alert("Mensaje enviado correctamente");
       toast.success("Mensaje enviado correctamente");
+      alert("Mensaje enviado correctamente");
     }
   }, [isSubmitSuccessful, reset]);
 
@@ -50,9 +50,13 @@ export function Contact() {
 
   const onSubmit: SubmitHandler<inputs> = async (data) => {
     const { name, email, mensaje } = data;
-    console.log(name, email, mensaje);
     // le paso los datos a la funcion que envia el email
-    await sendEmail(data);
+    try {
+      await sendEmail(data);
+      toast.success("Mensaje enviado correctamente");
+    } catch (error) {
+      toast.error("Hubo un error al enviar el mensaje");
+    }
   };
 
   return (

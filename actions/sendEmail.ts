@@ -10,9 +10,7 @@ interface data {
   mensaje: string;
 }
 export const sendEmail = async (data: data) => {
-  console.log("aqui");
   const { name, email, mensaje } = data;
-  console.log(data, "sendEmail");
   const nameField = name ? name : "No name";
   const emailField = email ? email : "No email";
   const mensajeField = mensaje ? mensaje : "No mensaje";
