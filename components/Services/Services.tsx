@@ -255,7 +255,7 @@ export function Services() {
         <div className="flex flex-col items-center justify-center p-6 md:p-8">
           <Reveal>
             <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center">
-              Alojamiento <br />
+              Servidor <br />
               VPS
             </h2>
           </Reveal>
@@ -291,10 +291,17 @@ export function Services() {
           </Reveal>
           <Reveal>
             <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark text-center">
-              Los planes que te ofrecemos, permite que tu nube sea monitoreado
-              por varios usuarios. La plataforma Cloud Storage, agiliza el
-              almacenamiento de archivos, bases de datos y sistemas, con la
-              ciberseguridad que solo MASYDASE te ofrece.
+              MASYDASE fusiona la creatividad y la funcionalidad para ofrecerte
+              una presencia digital única y efectiva, nos destacamos por nuestra
+              dedicación a la excelencia y la personalización. Nuestro equipo de
+              expertos no solo posee habilidades técnicas avanzadas, sino que
+              también comprende la importancia de plasmar la identidad y visión
+              de tu marca en cada línea de código y diseño. Desde sitios web
+              elegantes y minimalistas hasta plataformas interactivas y
+              completamente personalizadas, nos esforzamos por superar tus
+              expectativas y destacar tu negocio en línea. Confía en nosotros
+              para convertir tu visión en una experiencia digital cautivadora y
+              funcional.
             </p>
           </Reveal>
         </div>
