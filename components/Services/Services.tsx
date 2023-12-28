@@ -50,114 +50,7 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      {/* <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
-        <div className="w-full">
-          <div className="flex flex-col w-full mb-10 sm:flex-row">
-            <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
-              <div className="relative h-full ml-0 mr-0 sm:mr-10">
-                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-sky-500 rounded-lg"></span>
-                <div className="relative h-full p-5 bg-slate-100 border-2 border-sky-600 rounded-lg">
-                  <div className="flex items-center -mt-1 gap-2">
-                    <h3 className="my-2 ml-3 text-lg font-bold text-grayDark">
-                      Consultoría y auditoría
-                    </h3>
-                    <Search className="text-sky-600" />
-                  </div>
-                  <p className="mt-3 mb-1 text-xs font-medium text-sky-600 uppercase">
-                    ------------
-                  </p>
-                  <p className="mb-2 text-grayDark">
-                    Nuestro servicio de auditoría a los estados financieros
-                    tiene comopropósito emitir opinión sobre la razonabilidad de
-                    los estadosfinancieros. Complementamos nuestra revisión con
-                    un exhaustivoanálisis contable, financiero y fiscal de las
-                    operaciones.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full sm:w-1/2">
-              <div className="relative h-full ml-0 md:mr-10">
-                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-sky-600 rounded-lg"></span>
-                <div className="relative h-full p-5 bg-slate-100 border-2 border-sky-700 rounded-lg">
-                  <div className="flex items-center -mt-1 gap-2">
-                    <h3 className="my-2 ml-3 text-lg font-bold text-grayDark">
-                      Outsourcing contable
-                    </h3>
-                    <Workflow className="text-sky-700" />
-                  </div>
-                  <p className="mt-3 mb-1 text-xs font-medium text-sky-700 uppercase">
-                    ------------
-                  </p>
-                  <p className="mb-2 text-grayDark">
-                    El Outsourcing Contable es una moderna herramienta de
-                    administración, que permite a nuestra firma trabajar en
-                    conjuntocon nuestros socios, dejando en manos de
-                    especialistas conexperiencia, sus procesos administrativos y
-                    contables.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col w-full mb-5 sm:flex-row">
-            <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
-              <div className="relative h-full ml-0 mr-0 sm:mr-10">
-                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-sky-700 rounded-lg"></span>
-                <div className="relative h-full p-5 bg-slate-100 border-2 border-sky-800 rounded-lg">
-                  <div className="flex items-center -mt-1 gap-2">
-                    <h3 className="my-2 ml-3 text-lg font-bold text-grayDark">
-                      Alojamiento Cloud
-                    </h3>
-                    <Cloud className="text-sky-800" />
-                  </div>
-                  <p className="mt-3 mb-1 text-xs font-medium text-sky-800 uppercase">
-                    ------------
-                  </p>
-                  <p className="mb-2 text-gray-600">
-                    Los planes que te ofrecemos, permite que tu nube sea
-                    monitoreadopor varios usuarios. La plataforma Cloud Storage,
-                    agiliza elalmacenamiento de archivos, bases de datos y
-                    sistemas, con laciberseguridad que solo MASYDASE te ofrece.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full sm:w-1/2">
-              <div className="relative h-full ml-0 md:mr-10">
-                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-sky-800 rounded-lg"></span>
-                <div className="relative h-full p-5 bg-slate-100 border-2 border-sky-900 rounded-lg">
-                  <div className="flex items-center -mt-1 gap-2">
-                    <h3 className="my-2 ml-3 text-lg font-bold text-grayDark">
-                      Diseño y desarrollo de páginas web
-                    </h3>
-                    <MonitorSmartphone className="text-sky-900" />
-                  </div>
-                  <p className="mt-3 mb-1 text-xs font-medium text-sky-900 uppercase">
-                    ------------
-                  </p>
-                  <p className="mb-2 text-gray-600">
-                    Los planes que te ofrecemos, permite que tu nube sea
-                    monitoreado por varios usuarios. La plataforma Cloud
-                    Storage, agiliza el almacenamiento de archivos, bases de
-                    datos y sistemas, con la ciberseguridad que solo MASYDASE te
-                    ofrece.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="flex flex-wrap justify-center mt-10">
-        {dataCardServices.map(({ id, icon, title, text }) => {
-          return (
-            <div className="" key={id}>
-              <CardServices icon={icon} title={title} text={text} />
-            </div>
-          );
-        })}
-      </div> */}
+
       <div className="mt-10 flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
@@ -185,7 +78,7 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
+      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly mt-10">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/outsor.png"
@@ -215,7 +108,7 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
+      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly mt-|0">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/cloud3.png"
@@ -242,10 +135,10 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
+      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly mt-10">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
-            src="/assets/vps.jpg"
+            src="/assets/vpss.png"
             alt="vps"
             width="480"
             height={411}
@@ -272,7 +165,7 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
+      {/* <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/control-business.png"
@@ -305,7 +198,7 @@ export function Services() {
             </p>
           </Reveal>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

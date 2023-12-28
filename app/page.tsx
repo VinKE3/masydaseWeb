@@ -3,6 +3,8 @@ import Benefits from "@/components/Benefits/Benefits";
 import { ChooseYourCards } from "@/components/ChooseYourCards";
 import { Contact } from "@/components/Contact";
 import { CounterData } from "@/components/CounterData";
+import { DesarrolloWeb } from "@/components/DesarrlloWeb";
+import { ServiciosDesarrolloWeb } from "@/components/DesarrlloWeb/ServiciosDesarrolloWeb";
 import { FacturationSystem } from "@/components/FacturationSystem";
 import { FirstBlock } from "@/components/FirstBlock";
 import { Footer } from "@/components/Footer";
@@ -25,6 +27,8 @@ export default function Home() {
       <Plans />
       <ChooseYourCards />
       <Services />
+      <DesarrolloWeb />
+      {/* <ServiciosDesarrolloWeb /> */}
       <Partners />
       <Contact />
       <Footer />

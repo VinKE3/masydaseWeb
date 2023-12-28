@@ -16,6 +16,11 @@ export const dataHeader = [
   },
   {
     id: 4,
+    name: "Desarrollo Web",
+    idLink: "#desarrollo",
+  },
+  {
+    id: 5,
     name: "Contacto",
     idLink: "#contact",
   },
