@@ -181,6 +181,8 @@ export function Footer() {
                     <Link
                       key={id}
                       href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-2xl transition-colors duration-300 dark:hover:text-white hover:text-azul"
                     >
                       {icon}

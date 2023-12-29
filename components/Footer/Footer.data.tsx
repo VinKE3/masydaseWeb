@@ -1,29 +1,36 @@
 import {
   RiFacebookCircleFill,
+  RiInstagramFill,
   RiLinkedinBoxFill,
   RiTwitterXFill,
   RiWhatsappLine,
+  RiYoutubeFill,
 } from "react-icons/ri";
 
 export const footerSocialNetworks = [
-  {
-    id: 1,
-    icon: <RiWhatsappLine />,
-    link: "#",
-  },
+  // {
+  //   id: 1,
+  //   icon: <RiWhatsappLine />,
+  //   link: "#",
+  // },
   {
     id: 2,
     icon: <RiFacebookCircleFill />,
-    link: "#",
+    link: "https://web.facebook.com/masydase",
   },
   {
     id: 3,
-    icon: <RiTwitterXFill />,
-    link: "#",
+    icon: <RiInstagramFill />,
+    link: "https://www.instagram.com/masydase_/",
   },
   {
     id: 4,
+    icon: <RiYoutubeFill />,
+    link: "https://www.youtube.com/@masydase880",
+  },
+  {
+    id: 5,
     icon: <RiLinkedinBoxFill />,
-    link: "#",
+    link: "https://pe.linkedin.com/company/masydase1",
   },
 ];
