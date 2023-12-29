@@ -41,7 +41,7 @@ export function Footer() {
                 <div className="flex gap-2">
                   <Reveal>
                     <a
-                      href="tel:850-123-5021"
+                      href="tel:987-351-513"
                       aria-label="Our phone"
                       title="Our phone"
                       className="transition-colors duration-300 dark:hover:text-white hover:text-azul"
@@ -53,7 +53,7 @@ export function Footer() {
                 <div className="flex gap-2">
                   <Reveal>
                     <a
-                      href="tel:850-123-5021"
+                      href="tel:948-799-203"
                       aria-label="Our phone"
                       title="Our phone"
                       className="transition-colors duration-300 dark:hover:text-white hover:text-azul"
@@ -65,7 +65,7 @@ export function Footer() {
                 <div className="flex gap-2">
                   <Reveal>
                     <a
-                      href="tel:850-123-5021"
+                      href="tel:936-072-443"
                       aria-label="Our phone"
                       title="Our phone"
                       className="transition-colors duration-300 dark:hover:text-white hover:text-azul"

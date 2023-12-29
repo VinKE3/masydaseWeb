@@ -219,6 +219,9 @@ export function Contact() {
                             <p className="dark:text-primaryDark text-grayDark ">
                               (+51)984799203
                             </p>
+                            <p className="dark:text-primaryDark text-grayDark ">
+                              (+51)936072443
+                            </p>
                           </div>
                         </div>
                       </div>

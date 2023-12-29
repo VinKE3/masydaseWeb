@@ -6,10 +6,6 @@ import { Reveal } from "../Reveal";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
-import { Cloud, MonitorSmartphone, Search, Workflow } from "lucide-react";
-import { CardServices } from "./CardServices/CardServices";
-import { Star } from "lucide-react";
-import { dataCardServices } from "./CardServices/CardServices.data";
 
 export function Services() {
   const { theme } = useTheme();

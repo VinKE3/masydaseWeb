@@ -28,7 +28,7 @@ export default function Home() {
       <ChooseYourCards />
       <Services />
       <DesarrolloWeb />
-      {/* <ServiciosDesarrolloWeb /> */}
+      <ServiciosDesarrolloWeb />
       <Partners />
       <Contact />
       <Footer />
