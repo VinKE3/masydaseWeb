@@ -44,7 +44,7 @@ export function About() {
             <p className="max-w-md mt-10 dark:text-primaryDark text-grayDark">
               En MASYDASE, somos un equipo joven dedicado a la programación de
               sistemas convertidas en soluciones, y que brinda soporte técnico a
-              más de 350 empresas nacionales, desde 1998.
+              más de 1500 empresas nacionales, desde 1998.
             </p>
           </Reveal>
           <Reveal>

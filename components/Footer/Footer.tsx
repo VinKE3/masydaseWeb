@@ -26,7 +26,7 @@ export function Footer() {
                 <p className="text-base text-grayDark dark:text-primaryDark">
                   Somos un equipo joven dedicado a la programación de sistemas
                   convertidas en soluciones, y que brinda soporte técnico a más
-                  de 350 empresas nacionales, desde 1998.
+                  de 1500 empresas nacionales, desde 1998.
                 </p>
               </Reveal>
             </div>

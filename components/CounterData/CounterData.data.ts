@@ -1,8 +1,8 @@
 export const dataCounter = [
   {
     id: 1,
-    startNumber: 50,
-    endNumber: 350,
+    startNumber: 500,
+    endNumber: 1500,
     text: "Empresas Asesoradas",
   },
   {
@@ -13,8 +13,8 @@ export const dataCounter = [
   },
   {
     id: 3,
-    startNumber: 50,
-    endNumber: 550,
+    startNumber: 500,
+    endNumber: 1730,
     text: "Clientes Satifechos",
   },
 ];

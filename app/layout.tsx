@@ -20,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <link rel="icon" href="/path/to/logo2.ico" type="image/x-icon" />
+      </head>
       <body className={popinsFont.className}>
         <Providers>{children}</Providers>
       </body>
