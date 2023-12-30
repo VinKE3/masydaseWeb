@@ -288,7 +288,7 @@ export function Contact() {
                               Horario de atención
                             </p>
                             <p className="dark:text-primaryDark text-grayDark">
-                              Lunes a Viernes: 9 am a 7 pm
+                              Lunes a Viernes: 8 am a 6 pm
                             </p>
                             <p className="dark:text-primaryDark text-grayDark">
                               Sábados: 9 am a 12 pm
