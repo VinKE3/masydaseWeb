@@ -132,7 +132,7 @@ export function DesarrolloWeb() {
             <div className="mr-0 md:mr-8 mb-6 md:mb-0">
               <Image
                 className="w-1/2 md:w-full mx-auto"
-                src="/assets/hosting.png"
+                src="/assets/hosttt.png"
                 alt="can_help_banner"
                 width="400"
                 height="400"

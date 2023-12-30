@@ -108,7 +108,7 @@ export function Services() {
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/cloud3.png"
-            alt="Control Business"
+            alt="cloud"
             width="480"
             height={411}
             className="w-full h-auto"
