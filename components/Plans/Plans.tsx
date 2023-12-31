@@ -39,15 +39,15 @@ export function Plans() {
               <div className="flex w-full flex-wrap lg:border border-grayDark rounded-lg">
                 <div className="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-grayDark lg:border-none rounded-lg lg:rounded-none">
                   <div className="px-2 text-center h-48 flex flex-col items-center justify-center">
-                    <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium leading-none mb-4 mt-2">
+                    <h2 className="text-3xl md:text-4xl from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue font-medium leading-none mb-4 mt-2">
                       Plan Básico
                     </h2>
                     <span className="text-sm text-grayDark dark:text-white">
                       Hasta 400 comprabantes al mes
                     </span>
-                    <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
+                    <h2 className="text-3xl md:text-4xl from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul dark:bg-blueRadial degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
                       S/69.90
-                      <span className="dark:bg-blueLight degradedBlue text-grayDark text-base ml-1">
+                      <span className="from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue text-base ml-1">
                         /Mes
                       </span>
                     </h2>
@@ -97,15 +97,15 @@ export function Plans() {
                     POPULAR
                   </span>
                   <div className="px-2 text-center h-48 flex flex-col items-center justify-center">
-                    <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium leading-none mb-4 mt-2">
+                    <h2 className="text-3xl md:text-4xl from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue font-medium leading-none mb-4 mt-2">
                       Plan MYPE
                     </h2>
                     <span className="text-sm text-grayDark dark:text-white">
                       Hasta 1000 comprabantes al mes
                     </span>
-                    <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
+                    <h2 className="text-3xl md:text-4xl from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul dark:bg-blueRadial degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
                       S/118
-                      <span className="dark:bg-blueLight degradedBlue text-grayDark text-base ml-1">
+                      <span className="from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue text-base ml-1">
                         /Mes
                       </span>
                     </h2>
@@ -152,15 +152,15 @@ export function Plans() {
                 </div>
                 <div className="lg:w-1/3 w-full lg:mt-px border-2 border-grayDark lg:border-none rounded-lg lg:rounded-none mb-5">
                   <div className="px-2 text-center h-48 flex flex-col items-center justify-center">
-                    <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium leading-none mb-4 mt-2">
+                    <h2 className="text-3xl md:text-4xl from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue font-medium leading-none mb-4 mt-2">
                       Plan Premium
                     </h2>
                     <span className="text-sm text-grayDark dark:text-white">
                       Comprobantes Ilimitados
                     </span>
-                    <h2 className="text-3xl md:text-4xl text-grayDark dark:bg-blueLight degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
+                    <h2 className="text-3xl md:text-4xl from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul dark:bg-blueRadial degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
                       S/177
-                      <span className="dark:bg-blueLight degradedBlue text-grayDark text-base ml-1">
+                      <span className="from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue text-base ml-1">
                         /Mes
                       </span>
                     </h2>

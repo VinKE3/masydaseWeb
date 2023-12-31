@@ -172,7 +172,7 @@ export function Footer() {
             <div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
               <div>
                 <h2 className="inline-block text-2xl pb-4 mb-4 dark:pb-4 dark:mb-4 border-b-4 dark:border-white border-grayDark from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent dark:bg-blueRadial degradedBlue">
-                  Contactanos en Redes
+                  Contáctanos en Redes
                 </h2>
               </div>
               <Reveal>

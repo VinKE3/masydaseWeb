@@ -30,7 +30,7 @@ export function About() {
           <Reveal>
             <h2 className="text-4xl md:text-5xl font-semibold">
               <span className="block degradedBlue text-grayDark dark:bg-blueLight">
-                Nos presentan un problema
+                Nos presentan un problema,
               </span>
               <span className="block degradedBlue text-azul dark:text-white">
                 nosotros encontramos <br />

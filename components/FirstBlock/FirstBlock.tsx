@@ -49,7 +49,7 @@ export function FirstBlock() {
                 href="#contact"
                 className="px-4 py-3 rounded-md text-white bg-primary hover:bg-azul dark:bg-blueRadial"
               >
-                Contactanos
+                Contáctanos
               </Link>
             </div>
           </Reveal>

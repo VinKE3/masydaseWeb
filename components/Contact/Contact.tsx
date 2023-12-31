@@ -90,11 +90,10 @@ export function Contact() {
             <div className="flex justify-center">
               <div className="text-center md:max-w-xl lg:max-w-3xl">
                 <h2 className="mb-12 px-6 text-4xl md:text-5xl p-4 from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent font-bold dark:bg-blueRadial degradedBlue">
-                  Contactanos
+                  Contáctanos
                 </h2>
               </div>
             </div>
-
             <div
               id="map"
               className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat"
@@ -237,7 +236,7 @@ export function Contact() {
                               Dirección
                             </p>
                             <p className="dark:text-primaryDark text-gray-500 ">
-                              Villa el Salvador, Grupo 13 Mza. C Lote. 9 Sec. 3
+                              Villa el Salvador, Sec. 3 Grupo 13 Mza. C Lote. 9
                             </p>
                           </div>
                         </div>

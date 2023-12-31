@@ -9,12 +9,12 @@ export const dataCounter = [
     id: 2,
     startNumber: 1,
     endNumber: 230,
-    text: "Paginas Creadas",
+    text: "Páginas Creadas",
   },
   {
     id: 3,
     startNumber: 500,
     endNumber: 1730,
-    text: "Clientes Satifechos",
+    text: "Clientes Satisfechos",
   },
 ];

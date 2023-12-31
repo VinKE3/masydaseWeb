@@ -78,7 +78,7 @@ export default function Benefits() {
                     <div className="absolute dark:bg-white dark:group-hover:bg-cyan-600 bg-azul/80 top-0 left-0 w-24 h-1 z-30  transition-all duration-200 group-hover:bg-white group-hover:w-1/2  "></div>
                     <div className="py-2 px-9 relative  ">
                       <h3 className="mt-8 text-lg font-semibold text-grayDark group-hover:text-white dark:text-white">
-                        Platafora Web de Facturas Electrónicas
+                        Plataforma Web de Facturas Electrónicas
                       </h3>
                       <p className="mt-4 text-base text-grayDark dark:text-white group-hover:text-white">
                         MASYDASE cuenta con una plataforma web en donde el
