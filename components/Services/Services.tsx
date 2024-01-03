@@ -51,7 +51,7 @@ export function Services() {
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/consultoria.png"
-            alt="Control Business"
+            alt="consultoria"
             width="480"
             height={411}
             className="w-full h-auto"
@@ -60,7 +60,7 @@ export function Services() {
         <div className="flex flex-col items-center justify-center p-6 md:p-8">
           <Reveal>
             <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center">
-              Consultoría <br />y auditoría
+              Consultoría y auditoría
             </h2>
           </Reveal>
           <Reveal>
@@ -78,7 +78,7 @@ export function Services() {
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/outsor.png"
-            alt="Control Business"
+            alt="outsor"
             width="480"
             height={411}
             className="w-full h-auto"
