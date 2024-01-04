@@ -6,6 +6,7 @@ import { Reveal } from "../Reveal";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
+import { dataServices } from "./Services.data";
 
 export function Services() {
   const { theme } = useTheme();
@@ -46,8 +47,35 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-
-      <div className="mt-10 flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
+      {dataServices.map(({ id, title, description, image }) => (
+        <div
+          key={id}
+          className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly"
+        >
+          <MotionTransition className="flex-1 p-6 md:p-8">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width="480"
+              height={411}
+              className="w-full h-auto"
+            />
+          </MotionTransition>
+          <div className="flex flex-col items-center justify-center p-6 md:p-8">
+            <Reveal>
+              <h2 className="text-3xl py-2 md:text-5xl font-semibold dark:text-white text-grayDark text-center">
+                {title}
+              </h2>
+            </Reveal>
+            <Reveal>
+              <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark text-center">
+                {description}
+              </p>
+            </Reveal>
+          </div>
+        </div>
+      ))}
+      {/* <div className="mt-10 flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/consultoria.png"
@@ -104,7 +132,7 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly mt-|0">
+      <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly mt-10">
         <MotionTransition className="flex-1 p-6 md:p-8">
           <Image
             src="/assets/cloud3.png"
@@ -157,40 +185,6 @@ export function Services() {
               seguridad avanzadas, opciones de escalabilidad y tarifas
               competitivas. Implementanmos mejoras constantes para mandatener a
               nuestros clientes satisfechos.
-            </p>
-          </Reveal>
-        </div>
-      </div>
-      {/* <div className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly">
-        <MotionTransition className="flex-1 p-6 md:p-8">
-          <Image
-            src="/assets/control-business.png"
-            alt="diseñoWeb"
-            width="480"
-            height={411}
-            className="w-full h-auto"
-          />
-        </MotionTransition>
-        <div className="flex flex-col items-center justify-center p-6 md:p-8">
-          <Reveal>
-            <h2 className="text-3xl md:text-5xl font-semibold dark:text-white text-grayDark text-center py-2">
-              Diseño y desarrollo <br />
-              de páginas web
-            </h2>
-          </Reveal>
-          <Reveal>
-            <p className="max-w-md mt-10 text-grayDark dark:text-primaryDark text-center">
-              MASYDASE fusiona la creatividad y la funcionalidad para ofrecerte
-              una presencia digital única y efectiva, nos destacamos por nuestra
-              dedicación a la excelencia y la personalización. Nuestro equipo de
-              expertos no solo posee habilidades técnicas avanzadas, sino que
-              también comprende la importancia de plasmar la identidad y visión
-              de tu marca en cada línea de código y diseño. Desde sitios web
-              elegantes y minimalistas hasta plataformas interactivas y
-              completamente personalizadas, nos esforzamos por superar tus
-              expectativas y destacar tu negocio en línea. Confía en nosotros
-              para convertir tu visión en una experiencia digital cautivadora y
-              funcional.
             </p>
           </Reveal>
         </div>

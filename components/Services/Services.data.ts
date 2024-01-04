@@ -7,11 +7,8 @@ export const dataServices: ServicesData = [
     description:
       "Nuestro servicio de auditoría a los estados financieros tiene como propósito emitir opinión sobre la razonabilidad de los estados financieros. Complementamos nuestra revisión con un exhaustivo análisis contable, financiero y fiscal de las operaciones. Nuestro servicio siempre va acompañado de un Informe de Control Interno.",
     image: {
-      src: "/images/development.svg",
+      src: "/assets/consultoria.png",
       alt: "Desarrollo de Software",
-      width: 400,
-      height: 300,
-      className: "services__image",
     },
   },
   {
@@ -22,22 +19,26 @@ export const dataServices: ServicesData = [
     image: {
       src: "/assets/outsor.png",
       alt: "outsor",
-      width: 480,
-      height: 411,
-      className: "w-full h-auto",
     },
   },
   {
     id: 3,
-    title: "Desarrollo de Software",
+    title: " Alojamiento CLOUD",
     description:
-      "Desarrollamos sistemas a la medida de tus necesidades, con la tecnología más avanzada del mercado.",
+      "Los planes que te ofrecemos, permite que tu nube sea monitoreado por varios usuarios. La plataforma Cloud Storage, agiliza el almacenamiento de archivos, bases de datos y sistemas, con la ciberseguridad que solo MASYDASE te ofrece.",
     image: {
-      src: "/images/development.svg",
-      alt: "Desarrollo de Software",
-      width: 400,
-      height: 300,
-      className: "services__image",
+      src: "/assets/cloud3.png",
+      alt: "cloud",
+    },
+  },
+  {
+    id: 4,
+    title: "Servidores VPS",
+    description:
+      "Ofrecemos un servicio VPS con un rendimiento superior respaldado por servidores potentes y recursos de calidad, garantiza un tiempo de actividad del 99.9%, proporcionamos una interfaz fácil de usar y soporte técnico garantizado. Destacamos por las medidas de seguridad avanzadas, opciones de escalabilidad y tarifas competitivas. Implementanmos mejoras constantes para mandatener a nuestros clientes satisfechos.",
+    image: {
+      src: "/assets/vpss.png",
+      alt: "vps",
     },
   },
 ];
