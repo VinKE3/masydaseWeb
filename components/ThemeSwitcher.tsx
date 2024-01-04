@@ -22,7 +22,7 @@ const ThemeSwitcherBtn: FC<ThemeSwitcherBtnProps> = ({ setOcultar }) => {
 
   return (
     <div
-      className="text-dark dark:text-white cursor-pointer transition-all duration-500 ease-in-out"
+      className="dark:text-white cursor-pointer transition-all duration-500 ease-in-out"
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
         setOcultar(true);
