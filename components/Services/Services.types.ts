@@ -6,6 +6,7 @@ export type ImageData = {
 export type ServicesData = {
   id: number;
   title: string;
+  title2: string;
   description: string;
   image: ImageData;
 }[];

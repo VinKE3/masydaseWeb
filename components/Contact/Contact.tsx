@@ -63,18 +63,6 @@ export function Contact() {
     // le paso los datos a la funcion que envia el email
     try {
       await sendEmail(data);
-      // const titulo = "Mensaje enviado correctamente";
-      // toast.success(titulo, {
-      //   position: "bottom-right",
-      //   autoClose: 3000,
-      //   hideProgressBar: true,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      //   theme: "colored",
-      //   toastId: "toastTipoCambio",
-      // });
     } catch (error) {
       console.log(error);
     }

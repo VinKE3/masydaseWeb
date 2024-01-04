@@ -2,11 +2,11 @@
 
 import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
-import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { Check } from "lucide-react";
+import { dataServiciosDesarrolloWeb } from "./ServiciosDesarrolloWeb.data";
 import Link from "next/link";
 
 export function ServiciosDesarrolloWeb() {
@@ -69,107 +69,24 @@ export function ServiciosDesarrolloWeb() {
             </div>
           </div>
           <div className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
-            <MotionTransition>
-              <div className="relative pl-9">
-                <div className="font-semibold text-gray-900 flex flex-row gap-2">
-                  <Check
-                    className="absolute top-1 left-0 h-5 w-5 text-azul dark:text-cyan-500"
-                    size={24}
-                  />
-                  <h2 className="font-bold tracking-tight from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
-                    Un sitio Web
-                  </h2>
+            {dataServiciosDesarrolloWeb.map(({ id, title, description }) => (
+              <MotionTransition key={id}>
+                <div className="relative pl-9">
+                  <div className="font-semibold text-gray-900 flex flex-row gap-2">
+                    <Check
+                      className="absolute top-1 left-0 h-5 w-5 text-azul dark:text-cyan-500"
+                      size={24}
+                    />
+                    <h2 className="font-bold tracking-tight from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
+                      {title}
+                    </h2>
+                  </div>
+                  <p className="mt-2 text-grayDark dark:text-primaryDark">
+                    {description}
+                  </p>
                 </div>
-                <p className="mt-2 text-grayDark dark:text-primaryDark">
-                  Te ayudamos a crear un sitio web para tu negocio o empresa.
-                </p>
-              </div>
-            </MotionTransition>
-            <MotionTransition>
-              <div className="relative pl-9">
-                <div className="font-semibold text-gray-900">
-                  <Check
-                    className="absolute top-1 left-0 h-5 w-5 text-azul dark:text-cyan-500"
-                    size={24}
-                  />
-                  <h2 className="font-bold tracking-tight from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
-                    Diseño Responsive
-                  </h2>
-                </div>
-                <p className="mt-2 text-grayDark dark:text-primaryDark">
-                  Tu página web se adaptará a cualquier dispositivo, ya sea
-                  computadora, tablet o celular.
-                </p>
-              </div>
-            </MotionTransition>
-            <MotionTransition>
-              <div className="relative pl-9">
-                <div className="">
-                  <Check
-                    className="absolute top-1 left-0 h-5 w-5 text-azul dark:text-cyan-500"
-                    size={24}
-                  />
-                  <h2 className="font-bold tracking-tight from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
-                    Dominio
-                  </h2>
-                </div>
-                <p className="mt-2 text-grayDark dark:text-primaryDark">
-                  Te ayudamos a conseguir un dominio para tu página web.
-                </p>
-              </div>
-            </MotionTransition>
-            <MotionTransition>
-              <div className="relative pl-9">
-                <div className="font-semibold text-gray-900">
-                  <Check
-                    className="absolute top-1 left-0 h-5 w-5 text-azul dark:text-cyan-500"
-                    size={24}
-                  />
-                  <h2 className="font-bold tracking-tight from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
-                    Hosting
-                  </h2>
-                </div>
-                <p className="mt-2 text-grayDark dark:text-primaryDark">
-                  Te ofrecemos un servicio de hosting para tu página web, con el
-                  cual podrás tener tu página web en línea.
-                </p>
-              </div>
-            </MotionTransition>
-            <MotionTransition>
-              <div className="relative pl-9">
-                <div className="font-semibold text-gray-900">
-                  <Check
-                    className="absolute top-1 left-0 h-5 w-5 text-azul dark:text-cyan-500"
-                    size={24}
-                  />
-                  <h2 className="font-bold tracking-tight from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
-                    Copias de seguridad
-                  </h2>
-                </div>
-                <p className="mt-2 text-grayDark dark:text-primaryDark">
-                  Te ofrecemos un servicio de copias de seguridad para que no
-                  pierdas tu información.
-                </p>
-              </div>
-            </MotionTransition>
-            <MotionTransition>
-              <div className="relative pl-9">
-                <div className="font-semibold text-gray-900">
-                  <Check
-                    className="absolute top-1 left-0 h-5 w-5 text-azul dark:text-cyan-500"
-                    size={24}
-                  />
-                  <h2 className="font-bold tracking-tight from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
-                    {" "}
-                    Certificado SSL
-                  </h2>
-                </div>
-                <p className="mt-2 text-grayDark dark:text-primaryDark">
-                  Te ofrecemos un certificado SSL para que tu página web sea más
-                  segura.
-                </p>
-              </div>
-            </MotionTransition>
+              </MotionTransition>
+            ))}
           </div>
         </div>
       </div>
