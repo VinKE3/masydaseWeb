@@ -1,10 +1,12 @@
 "use client";
 import "swiper/css";
 import "swiper/css/pagination";
+import "./styles.css";
+import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
-import { Pagination } from "swiper/modules";
 import { dataCards } from "./ChooseYourCards.data";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -15,7 +17,12 @@ export function ChooseYourCards() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const [hasMounted, setHasMounted] = useState(false);
-
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index: number, className: string) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
   useEffect(() => {
     setHasMounted(true);
   }, []);
@@ -42,7 +49,7 @@ export function ChooseYourCards() {
         <div className="px-5 mt-6 md:mt-0">
           <MotionTransition>
             <Swiper
-              pagination={true}
+              pagination={pagination}
               modules={[Pagination]}
               className="mySwiper"
             >
