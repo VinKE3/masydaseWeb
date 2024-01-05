@@ -7,6 +7,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { dataServices } from "./Services.data";
+import { AnimatedText } from "../AnimatedText";
 
 export function Services() {
   const { theme } = useTheme();

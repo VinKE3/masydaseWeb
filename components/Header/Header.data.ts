@@ -6,21 +6,26 @@ export const dataHeader = [
   },
   {
     id: 2,
+    name: "F. Electronica",
+    idLink: "#facturacion",
+  },
+  {
+    id: 3,
     name: "Planes",
     idLink: "#plans",
   },
   {
-    id: 3,
+    id: 4,
     name: "Servicios",
     idLink: "#services",
   },
   {
-    id: 4,
+    id: 5,
     name: "Desarrollo Web",
     idLink: "#desarrollo",
   },
   {
-    id: 5,
+    id: 6,
     name: "Contacto",
     idLink: "#contact",
   },

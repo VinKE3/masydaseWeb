@@ -1,10 +1,10 @@
 "use client";
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/effect-cards";
 import "./styles.css";
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { EffectCards } from "swiper/modules";
 import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
 import { dataCards } from "./ChooseYourCards.data";
@@ -49,8 +49,9 @@ export function ChooseYourCards() {
         <div className="px-5 mt-6 md:mt-0">
           <MotionTransition>
             <Swiper
-              pagination={pagination}
-              modules={[Pagination]}
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
               className="mySwiper"
             >
               {dataCards.map(({ image, id }) => (
