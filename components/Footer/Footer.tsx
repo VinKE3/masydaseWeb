@@ -134,7 +134,7 @@ export function Footer() {
                   </Reveal>
                   <Reveal>
                     <p className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                      UtilCon 2023.01
+                      UtilCon 2024
                     </p>
                   </Reveal>
                   <Reveal>
