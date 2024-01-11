@@ -56,19 +56,29 @@ export function FirstBlock() {
         </div>
         <MotionTransition className="flex items-center justify-center">
           {isDark ? (
-            <Image
+            // <Image
+            //   src="/assets/cerebro2.png"
+            //   alt="Card"
+            //   width={450}
+            //   height={450}
+            //   className="h-auto w-72 md:w-full"
+            // />
+            <img
               src="/assets/cerebro2.png"
               alt="Card"
-              width={450}
-              height={450}
               className="h-auto w-72 md:w-full"
             />
           ) : (
-            <Image
+            // <Image
+            //   src="/assets/cerebro.webp"
+            //   alt="Card"
+            //   width={450}
+            //   height={450}
+            //   className="h-auto w-72 md:w-full"
+            // />
+            <img
               src="/assets/cerebro.webp"
               alt="Card"
-              width={450}
-              height={450}
               className="h-auto w-72 md:w-full"
             />
           )}
