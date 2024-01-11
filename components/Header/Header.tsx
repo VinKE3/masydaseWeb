@@ -41,7 +41,7 @@ export function Header() {
           <img
             src="/assets/logo2.png"
             alt="Logo MasyDase"
-            className="hidden md:block w-40 h-10"
+            className="w-40 h-10"
           />
         </Link>
         <RiMenu3Line

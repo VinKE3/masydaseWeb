@@ -48,11 +48,16 @@ export function Partners() {
                 key={id}
                 className="flex items-center slider-horizontal"
               >
-                <Image
+                {/* <Image
                   src={`/assets/${image}`}
                   alt="Partners"
                   width={70}
                   height={70}
+                  className="h-[60px] w-[120px] object-contain"
+                /> */}
+                <img
+                  src={`/assets/${image}`}
+                  alt="Partners"
                   className="h-[60px] w-[120px] object-contain"
                 />
               </SwiperSlide>

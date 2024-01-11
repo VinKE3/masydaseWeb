@@ -56,7 +56,8 @@ export function ChooseYourCards() {
             >
               {dataCards.map(({ image, id }) => (
                 <SwiperSlide key={id}>
-                  <Image src={image} alt="Card" width="400" height="300" />
+                  {/* <Image src={image} alt="Card" width="400" height="300" /> */}
+                  <img src={image} alt="Card" className="w-full h-full" />
                 </SwiperSlide>
               ))}
             </Swiper>

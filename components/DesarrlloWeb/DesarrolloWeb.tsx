@@ -64,12 +64,17 @@ export function DesarrolloWeb() {
           <MotionTransition>
             <div className="flex flex-col md:flex-row">
               <div className="mr-0 md:mr-8 mb-6 md:mb-0">
-                <Image
-                  className="w-1/2 md:w-full mx-auto"
+                {/* <Image
+                  className="w-2/3 md:w-full mx-auto"
                   src={image.src}
                   alt={image.alt}
                   width="400"
                   height="400"
+                /> */}
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-2/3 md:w-full mx-auto"
                 />
               </div>
               <div className="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">

@@ -15,11 +15,16 @@ export function Footer() {
           <div className="-mx-4 flex flex-wrap justify-between">
             <div className="px-4 my-4 w-full xl:w-1/5">
               <div className="mb-6">
-                <Image
+                {/* <Image
                   src="/assets/logo2.png"
                   width={200}
                   height={40}
                   alt="Logo MasyDase"
+                /> */}
+                <img
+                  src="/assets/logo2.png"
+                  alt="Logo MasyDase"
+                  className=" w-40 h-10"
                 />
               </div>
               <Reveal>
