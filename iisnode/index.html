@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"VINKE-WORKESTEI-12480-stderr-1704464122773.txt","computername":"VINKE-WORKESTEI","pid":12480,"type":"stderr","created":1704464122773},{"file":"VINKE-WORKESTEI-12480-stdout-1704464122771.txt","computername":"VINKE-WORKESTEI","pid":12480,"type":"stdout","created":1704464122771},{"file":"VINKE-WORKESTEI-12896-stderr-1704467737968.txt","computername":"VINKE-WORKESTEI","pid":12896,"type":"stderr","created":1704467737968},{"file":"VINKE-WORKESTEI-12896-stdout-1704467737966.txt","computername":"VINKE-WORKESTEI","pid":12896,"type":"stdout","created":1704467737966},{"file":"VINKE-WORKESTEI-15552-stderr-1704903005634.txt","computername":"VINKE-WORKESTEI","pid":15552,"type":"stderr","created":1704903005634},{"file":"VINKE-WORKESTEI-15552-stdout-1704903005627.txt","computername":"VINKE-WORKESTEI","pid":15552,"type":"stdout","created":1704903005627},{"file":"VINKE-WORKESTEI-16084-stderr-1704474577877.txt","computername":"VINKE-WORKESTEI","pid":16084,"type":"stderr","created":1704474577877},{"file":"VINKE-WORKESTEI-16084-stdout-1704474577874.txt","computername":"VINKE-WORKESTEI","pid":16084,"type":"stdout","created":1704474577874},{"file":"VINKE-WORKESTEI-20688-stderr-1704840263565.txt","computername":"VINKE-WORKESTEI","pid":20688,"type":"stderr","created":1704840263565},{"file":"VINKE-WORKESTEI-20688-stdout-1704840263562.txt","computername":"VINKE-WORKESTEI","pid":20688,"type":"stdout","created":1704840263562},{"file":"VINKE-WORKESTEI-22792-stderr-1704838852499.txt","computername":"VINKE-WORKESTEI","pid":22792,"type":"stderr","created":1704838852499},{"file":"VINKE-WORKESTEI-22792-stdout-1704838852496.txt","computername":"VINKE-WORKESTEI","pid":22792,"type":"stdout","created":1704838852496},{"file":"VINKE-WORKESTEI-23456-stderr-1704833906687.txt","computername":"VINKE-WORKESTEI","pid":23456,"type":"stderr","created":1704833906687},{"file":"VINKE-WORKESTEI-23456-stdout-1704833906675.txt","computername":"VINKE-WORKESTEI","pid":23456,"type":"stdout","created":1704833906675},{"file":"VINKE-WORKESTEI-24960-stderr-1704471340899.txt","computername":"VINKE-WORKESTEI","pid":24960,"type":"stderr","created":1704471340899},{"file":"VINKE-WORKESTEI-24960-stdout-1704471340898.txt","computername":"VINKE-WORKESTEI","pid":24960,"type":"stdout","created":1704471340898},{"file":"VINKE-WORKESTEI-29020-stderr-1704899249181.txt","computername":"VINKE-WORKESTEI","pid":29020,"type":"stderr","created":1704899249181},{"file":"VINKE-WORKESTEI-29020-stdout-1704899249155.txt","computername":"VINKE-WORKESTEI","pid":29020,"type":"stdout","created":1704899249155},{"file":"VINKE-WORKESTEI-29364-stderr-1704478631203.txt","computername":"VINKE-WORKESTEI","pid":29364,"type":"stderr","created":1704478631203},{"file":"VINKE-WORKESTEI-29364-stdout-1704478631201.txt","computername":"VINKE-WORKESTEI","pid":29364,"type":"stdout","created":1704478631201},{"file":"VINKE-WORKESTEI-8276-stderr-1704978414096.txt","computername":"VINKE-WORKESTEI","pid":8276,"type":"stderr","created":1704978414096},{"file":"VINKE-WORKESTEI-8276-stdout-1704978414087.txt","computername":"VINKE-WORKESTEI","pid":8276,"type":"stdout","created":1704978414087}];
+        var lastUpdated = 1704978416211;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

@@ -15,7 +15,7 @@ const Providers: FC<ProvidersProps> = ({ children }) => {
   }, []);
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={true}>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       {children}
     </ThemeProvider>
   );
