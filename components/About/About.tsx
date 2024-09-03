@@ -9,6 +9,7 @@ import { BackgroundBeamsWithCollision } from "../BackgroundBeamsCollision/backgr
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/CanvasReveal/canvas-reveal-effect";
 import { Star, ShieldCheck, Sparkle } from "lucide-react";
+import { EvervaultCard } from "../EvernualtCard/evervault-card";
 const Card = ({
   title,
   subtitle,
@@ -25,7 +26,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] relative"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem]"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
@@ -125,7 +126,7 @@ export function About() {
           </div>
         </Reveal>
       </div>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center  w-full gap-4 mx-auto px-8">
+      {/* <div className="py-20 flex flex-col lg:flex-row items-center justify-center  w-full gap-4 mx-auto px-8">
         <Card
           title="Misión"
           subtitle="Nuestra misión es adaptarnos a las necesidades de los sistemas de gestión corporativa, ofreciendo soluciones creativas e innovadoras con sistemas flexibles y soporte técnico integrado, personalizado para tu negocio."
@@ -165,6 +166,35 @@ export function About() {
             colors={[[125, 211, 252]]}
           />
         </Card>
+      </div> */}
+      <div className="flex gap-10 mt-10">
+        <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+          <EvervaultCard text="Misión " />
+
+          <h2 className="dark:text-white text-black mt-4 text-lg font-light">
+            Nuestra misión es adaptarnos a las necesidades de los sistemas de
+            gestión corporativa, ofreciendo soluciones creativas e innovadoras
+            con sistemas flexibles y soporte técnico integrado, personalizado
+            para tu negocio.
+          </h2>
+        </div>
+        <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+          <EvervaultCard text="Visión " />
+
+          <h2 className="dark:text-white text-black mt-4 text-lg font-light">
+            Aspiramos a ser líderes en el mercado informático, patentando la
+            mayoría de sistemas adaptables a todo tipo de negocios en Perú,
+            fortaleciendo la seguridad de empresas confiadas en nosotros.
+          </h2>
+        </div>
+        <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+          <EvervaultCard text="Valores " />
+          <h2 className="dark:text-white text-black mt-4 text-lg font-light">
+            Nuestros valores fundamentales son la responsabilidad, honestidad y
+            respeto, principios que guían nuestro compromiso hacia la excelencia
+            y la integridad en cada solución que brindamos a nuestros clientes.
+          </h2>
+        </div>
       </div>
     </div>
   );
