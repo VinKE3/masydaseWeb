@@ -18,7 +18,10 @@ export function FacturationSystem() {
     return null;
   }
   return (
-    <div className={`${isDark ? "" : ""} relative px-6 py-20 md:py-64`}>
+    <div
+      className={`${isDark ? "" : ""} relative px-6 py-20 md:py-64`}
+      id="facturacion"
+    >
       <section className="container mx-auto antialiased px-6">
         {isDark && <BackgroundRadialRight />}
         <div className="p-2 mx-auto mb-8 text-center lg:mb-12">

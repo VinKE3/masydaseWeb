@@ -7,6 +7,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { dataServices } from "./Services.data";
+import { AnimatedText } from "../AnimatedText";
 
 export function Services() {
   const { theme } = useTheme();
@@ -53,13 +54,14 @@ export function Services() {
           className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly"
         >
           <MotionTransition className="flex-1 p-6 md:p-8">
-            <Image
+            {/* <Image
               src={image.src}
               alt={image.alt}
               width="480"
               height={411}
               className="w-full h-auto"
-            />
+            /> */}
+            <img src={image.src} alt={image.alt} className="w-full h-auto" />
           </MotionTransition>
           <div className="flex flex-col items-center justify-center p-6 md:p-8">
             <Reveal>

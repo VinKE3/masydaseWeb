@@ -7,6 +7,7 @@ import { XIcon } from "./XIcon";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
+import { Reveal } from "../Reveal";
 
 export function Plans() {
   const { theme } = useTheme();
@@ -24,17 +25,25 @@ export function Plans() {
     <div className="relative px-6 py-20 md:py-64" id="plans">
       {isDark && <BackgroundRadialRight />}
       <div className="max-w-7xl mx-auto">
+        <div className="p-2 mx-auto mb-0 text-center lg:mb-4">
+          <div className="flex justify-center">
+            <Reveal>
+              <h1 className="mb-4 py-2 text-4xl md:text-5xl font-bold from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
+                Planes Empresariales
+              </h1>
+            </Reveal>
+          </div>
+          <div className="flex justify-center">
+            <Reveal>
+              <p className="mb-5 font-semibold text-grayDark dark:bg-blueLight degradedBlue sm:text-xl">
+                Nos adaptamos a las necesidades de MYPES, PYMES y grandes
+                empresas.
+              </p>
+            </Reveal>
+          </div>
+        </div>
         <MotionTransition>
           <section className="text-white body-font overflow-hidden">
-            <div className="p-2 mx-auto mb-8 text-center lg:mb-12">
-              <h2 className="mb-4 text-4xl md:text-5xl font-bold from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
-                Planes Empresariales
-              </h2>
-              <p className="mb-5 text-grayDark dark:text-primaryDark sm:text-xl">
-                Nos adaptamos a las necesidades de MYPES, PYMES y grandes
-                empresas
-              </p>
-            </div>
             <div className=" px-5 py-12 mx-auto flex flex-wrap">
               <div className="flex w-full flex-wrap lg:border border-grayDark rounded-lg">
                 <div className="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-grayDark lg:border-none rounded-lg lg:rounded-none">
