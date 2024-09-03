@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { dataServices } from "./Services.data";
 import { AnimatedText } from "../AnimatedText";
+import { TextParallaxContentM } from "../TextParallaxContent/TextParallaxContent";
 
 export function Services() {
   const { theme } = useTheme();
@@ -48,35 +49,7 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-      {dataServices.map(({ id, title, title2, description, image }) => (
-        <div
-          key={id}
-          className="flex flex-col-reverse max-w-7xl mx-auto md:flex-row place-content-evenly"
-        >
-          <MotionTransition className="flex-1 p-6 md:p-8">
-            {/* <Image
-              src={image.src}
-              alt={image.alt}
-              width="480"
-              height={411}
-              className="w-full h-auto"
-            /> */}
-            <img src={image.src} alt={image.alt} className="w-full h-auto" />
-          </MotionTransition>
-          <div className="flex flex-col items-center justify-center p-6 md:p-8">
-            <Reveal>
-              <h2 className="text-3xl py-2 md:text-5xl font-semibold dark:text-white text-grayDark text-center">
-                {title} <br /> {title2}
-              </h2>
-            </Reveal>
-            <Reveal>
-              <p className="max-w-md mt-5 text-grayDark dark:text-primaryDark text-center">
-                {description}
-              </p>
-            </Reveal>
-          </div>
-        </div>
-      ))}
+      <TextParallaxContentM />
     </div>
   );
 }

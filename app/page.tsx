@@ -13,6 +13,7 @@ import ParticleRing from "@/components/ParticleRing/ParticleRing";
 import { Partners } from "@/components/Partners";
 import { Plans } from "@/components/Plans";
 import { Services } from "@/components/Services";
+import { TextParallaxContentM } from "@/components/TextParallaxContent/TextParallaxContent";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <Plans />
       <ChooseYourCards />
       <Services />
+
       <DesarrolloWeb />
       <ServiciosDesarrolloWeb />
       <Partners />

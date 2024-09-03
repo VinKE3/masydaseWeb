@@ -12,7 +12,7 @@ const ParticleRing = () => {
         camera={{
           position: [10, -7.5, -5],
         }}
-        style={{ height: "80vh", width: "100%" }}
+        style={{ height: "70vh", width: "100%" }}
         className="bg-white dark:bg-black"
       >
         <OrbitControls maxDistance={20} minDistance={10} />
@@ -21,7 +21,7 @@ const ParticleRing = () => {
         <PointCircle />
       </Canvas>
 
-      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-4xl md:text-5xl text-grayDark dark:text-white font-semibold">
+      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-4xl md:text-5xl dark:text-white font-semibold degradedBlue dark:bg-blueLight text-primary">
         Transformamos ideas en
         <span className="block text-azul degradedBlue dark:bg-blueLight">
           soluciones ágiles
@@ -31,7 +31,7 @@ const ParticleRing = () => {
 
       {/* Scroll Button */}
       <ScrollLink
-        to="next-section" // The ID of the next section
+        to="about" // The ID of the next section
         smooth={true}
         duration={500}
         className="absolute bottom-10 left-[50%] -translate-x-[50%] flex items-center justify-center bg-primary hover:bg-sky-700 text-white font-bold py-3 px-6 rounded-full cursor-pointer transition transform hover:scale-105"
@@ -50,6 +50,7 @@ const ParticleRing = () => {
             d="M19 9l-7 7-7-7"
           />
         </svg>
+        Scroll
       </ScrollLink>
     </div>
   );

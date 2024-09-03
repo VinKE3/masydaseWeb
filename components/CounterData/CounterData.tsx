@@ -11,8 +11,8 @@ export function CounterData() {
     setIsMounted(true);
   }, []);
   return (
-    <MotionTransition className="lg:max-w-4xl xl:max-w-7xl py-10 mx-auto md:py-40 px-4">
-      <div className="justify-between md:flex">
+    <MotionTransition className="lg:max-w-4xl xl:max-w-7xl py-10 mx-auto px-4">
+      <div id="counter" className="justify-between md:flex">
         {isMounted &&
           dataCounter.map(({ id, startNumber, endNumber, text }) => (
             <div
