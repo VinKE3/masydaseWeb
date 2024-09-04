@@ -10,6 +10,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/CanvasReveal/canvas-reveal-effect";
 import { Star, ShieldCheck, Sparkle } from "lucide-react";
 import { EvervaultCard } from "../EvernualtCard/evervault-card";
+import { Meteors } from "../Meteors/meteors";
 const Card = ({
   title,
   subtitle,
@@ -126,74 +127,97 @@ export function About() {
           </div>
         </Reveal>
       </div>
-      {/* <div className="py-20 flex flex-col lg:flex-row items-center justify-center  w-full gap-4 mx-auto px-8">
-        <Card
-          title="Misión"
-          subtitle="Nuestra misión es adaptarnos a las necesidades de los sistemas de gestión corporativa, ofreciendo soluciones creativas e innovadoras con sistemas flexibles y soporte técnico integrado, personalizado para tu negocio."
-          icon={<Star className="w-36 h-36 text-azul dark:text-secondary" />}
-        >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
-          />
-        </Card>
-        <Card
-          title="Visión"
-          subtitle="Aspiramos a ser líderes en el mercado informático, patentando la mayoría de sistemas adaptables a todo tipo de negocios en Perú, fortaleciendo la seguridad de empresas confiadas en nosotros."
-          icon={<Sparkle className="w-36 h-36 text-azul dark:text-secondary" />}
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
-            dotSize={2}
-          />
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
-        </Card>
-        <Card
-          title="Valores"
-          subtitle="Nuestros valores fundamentales son la responsabilidad, honestidad y respeto, principios que guían nuestro compromiso hacia la excelencia y la integridad en cada solución que brindamos a nuestros clientes."
-          icon={
-            <ShieldCheck className="w-36 h-36 text-azul dark:text-secondary" />
-          }
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
-        </Card>
-      </div> */}
-      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-7xl mx-auto p-4">
-        <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto relative h-[30rem]">
-          <EvervaultCard text="Misión " />
-
-          <h2 className="dark:text-white text-black mt-4 text-lg font-light">
-            Nuestra misión es adaptarnos a las necesidades de los sistemas de
-            gestión corporativa, ofreciendo soluciones creativas e innovadoras
-            con sistemas flexibles y soporte técnico integrado, personalizado
-            para tu negocio.
-          </h2>
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto p-4">
+        <div className=" w-full relative max-w-xs">
+          <div className="absolute inset-0 h-full w-full rounded-full blur-3xl" />
+          <div className="relative shadow-xl  border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+            <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="h-2 w-2 text-black dark:text-gray-300"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                />
+              </svg>
+            </div>
+            <h1 className="font-bold text-xl text-primary dark:text-white mb-4 relative z-50">
+              Misión
+            </h1>
+            <p className="font-normal text-base dark:text-primaryDark text-grayDark mb-4 relative z-50">
+              Nuestra misión es adaptarnos a las necesidades de los sistemas de
+              gestión corporativa, ofreciendo soluciones creativas e innovadoras
+              con sistemas flexibles y soporte técnico integrado.
+            </p>
+            <Meteors number={20} />
+          </div>
         </div>
-        <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-          <EvervaultCard text="Visión " />
-
-          <h2 className="dark:text-white text-black mt-4 text-lg font-light">
-            Aspiramos a ser líderes en el mercado informático, patentando la
-            mayoría de sistemas adaptables a todo tipo de negocios en Perú,
-            fortaleciendo la seguridad de empresas confiadas en nosotros.
-          </h2>
+        <div className=" w-full relative max-w-xs">
+          <div className="absolute inset-0 h-full w-full  rounded-full blur-3xl" />
+          <div className="relative shadow-xl border  border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+            <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="h-2 w-2 text-black dark:text-gray-300"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                />
+              </svg>
+            </div>
+            <h1 className="font-bold text-xl text-primary dark:text-white mb-4 relative z-50">
+              Visión
+            </h1>
+            <p className="font-normal text-base dark:text-primaryDark text-grayDark mb-4 relative z-50">
+              Aspiramos a ser líderes en el mercado informático, patentando la
+              mayoría de sistemas adaptables a todo tipo de negocios en Perú,
+              fortaleciendo la seguridad de empresas confiadas en nosotros.
+            </p>
+            <Meteors number={20} />
+          </div>
         </div>
-        <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-          <EvervaultCard text="Valores " />
-          <h2 className="dark:text-white text-black mt-4 text-lg font-light">
-            Nuestros valores fundamentales son la responsabilidad, honestidad y
-            respeto, principios que guían nuestro compromiso hacia la excelencia
-            y la integridad en cada solución que brindamos a nuestros clientes.
-          </h2>
+        <div className=" w-full relative max-w-xs">
+          <div className="absolute inset-0 h-full w-full  rounded-full blur-3xl" />
+          <div className="relative shadow-xl border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+            <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="h-2 w-2 text-black dark:text-gray-300"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                />
+              </svg>
+            </div>
+            <h1 className="font-bold text-xl text-primary dark:text-white mb-4 relative z-50">
+              Valores
+            </h1>
+            <p className="font-normal text-base dark:text-primaryDark text-grayDark mb-4 relative z-50">
+              Nuestros valores fundamentales son la responsabilidad, honestidad
+              y respeto, principios que guían nuestro compromiso hacia la
+              excelencia y la integridad en cada solución que brindamos a
+              nuestros clientes.
+            </p>
+            <Meteors number={20} />
+          </div>
         </div>
       </div>
     </div>
