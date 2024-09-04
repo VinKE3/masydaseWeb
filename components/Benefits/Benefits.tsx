@@ -21,11 +21,7 @@ export default function Benefits() {
   }
   return (
     <>
-      <div
-        className={`${
-          isDark ? "" : "bg-slate-100"
-        } relative px-6 py-20 md:py-64`}
-      >
+      <div className={`${isDark ? "" : "bg-slate-100"} relative px-6 py-20 `}>
         {isDark && <BackgroundRadialLeft />}
         <div className="block relative bg-opacity-50 z-40">
           <div className="relative mx-auto h-full px-4 pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">

@@ -22,7 +22,7 @@ export function Plans() {
     return null;
   }
   return (
-    <div className="relative px-6 py-20 md:py-64" id="plans">
+    <div className="relative px-6 py-20" id="plans">
       {isDark && <BackgroundRadialRight />}
       <div className="max-w-7xl mx-auto">
         <div className="p-2 mx-auto mb-0 text-center lg:mb-4">

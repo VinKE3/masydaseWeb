@@ -4,22 +4,20 @@ import { Star, ShieldCheck, Sparkle } from "lucide-react";
 export const dataAbout: AboutData = [
   {
     id: 1,
-    icon: Star,
     title: "Misión",
     description:
-      "Es adaptarnos a las necesidades de los sistemas de gestión corporativa, ofreciendo soluciones creativas e innovadoras, a través de sistemas flexibles y un soporte técnico integrado a la medida de tu negocio.",
+      "Nuestra misión es adaptarnos a las necesidades de los sistemas de gestión corporativa, ofreciendo soluciones creativas e innovadoras con sistemas flexibles y soporte técnico integrado.",
   },
   {
     id: 2,
-    icon: Sparkle,
     title: "Visión",
     description:
-      "Es ser líderes del mercado informático y patentar la gran mayoría de sistemas adaptables a todos los niveles y giros de negocio del Perú, a fin de fortalecer la seguridad de todas las empresas que nos dan su confianza.",
+      "Aspiramos a ser líderes en el mercado informático, patentando la mayoría de sistemas adaptables a todo tipo de negocios en Perú, fortaleciendo la seguridad de empresas confiadas en nosotros.",
   },
   {
     id: 3,
-    icon: ShieldCheck,
     title: "Valores",
-    description: "Responsabilidad, honestidad, respeto..",
+    description:
+      "RNuestros valores fundamentales son la responsabilidad, honestidad y respeto, principios que guían nuestro compromiso hacia la excelencia y la integridad en cada solución que brindamos a nuestros clientes.",
   },
 ];

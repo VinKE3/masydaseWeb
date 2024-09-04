@@ -4,16 +4,16 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "@/utils/utils";
 import { Group } from "three";
-import { Link as ScrollLink } from "react-scroll";
+import { motion } from "framer-motion";
 const ParticleRing = () => {
   return (
     <div className="relative">
       <Canvas
         camera={{
-          position: [10, -7.5, -5],
+          position: [10, -17.5, -15],
         }}
-        style={{ height: "70vh", width: "100%" }}
-        className="bg-white dark:bg-black"
+        style={{ height: "100vh", width: "100%" }}
+        className="bg-zinc-50 dark:bg-black"
       >
         <OrbitControls maxDistance={20} minDistance={10} />
         <directionalLight />
@@ -21,37 +21,30 @@ const ParticleRing = () => {
         <PointCircle />
       </Canvas>
 
-      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-4xl md:text-5xl dark:text-white font-semibold degradedBlue dark:bg-blueLight text-primary">
+      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-4xl md:text-6xl dark:text-white font-extrabold degradedBlue dark:bg-blueLight text-primary/80 ">
         Transformamos ideas en
         <span className="block text-azul degradedBlue dark:bg-blueLight">
           soluciones ágiles
         </span>
         de confianza
       </h1>
-
-      {/* Scroll Button */}
-      <ScrollLink
-        to="about" // The ID of the next section
-        smooth={true}
-        duration={500}
-        className="absolute bottom-10 left-[50%] -translate-x-[50%] flex items-center justify-center bg-primary hover:bg-sky-700 text-white font-bold py-3 px-6 rounded-full cursor-pointer transition transform hover:scale-105"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={2}
-          stroke="currentColor"
-          className="w-6 h-6 mr-2"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-        Scroll
-      </ScrollLink>
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 dark:border-white border-sky-600 flex justify-center items-start p-2">
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full dark:bg-white bg-sky-600 mb-1"
+            />
+          </div>
+        </a>
+      </div>
     </div>
   );
 };

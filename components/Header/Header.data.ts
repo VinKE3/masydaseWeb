@@ -18,6 +18,10 @@ export const dataHeader = [
     id: 4,
     name: "Servicios",
     idLink: "#services",
+    subElements: [
+      { name: "Sub elemento 1", idLink: "/sub1" },
+      { name: "Sub elemento 2", idLink: "/sub2" },
+    ],
   },
   {
     id: 5,

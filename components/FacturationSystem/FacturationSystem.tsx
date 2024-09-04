@@ -21,7 +21,7 @@ export function FacturationSystem() {
   }
   return (
     <div
-      className={`${isDark ? "" : ""} relative px-6 py-20 md:py-64`}
+      className={`${isDark ? "" : ""} relative px-6 py-20 md:py-40`}
       id="facturacion"
     >
       <section className="container mx-auto antialiased px-6">
@@ -54,7 +54,7 @@ export function FacturationSystem() {
         <MotionTransition>
           <section className="grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-10 md:gap-40">
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -86,7 +86,7 @@ export function FacturationSystem() {
               </CardBody>
             </CardContainer>
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -113,7 +113,7 @@ export function FacturationSystem() {
               </CardBody>
             </CardContainer>
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white"

@@ -1,42 +1,52 @@
 export const dataPartners = [
   {
     id: 1,
-    image: "farai.png",
+    imgSrc: "/assets/farai.png",
+    altText: "farai",
   },
   {
     id: 2,
-    image: "iza.png",
+    imgSrc: "/assets/iza.png",
+    altText: "iza",
   },
   {
     id: 3,
-    image: "machu.png",
+    imgSrc: "/assets/machu.png",
+    altText: "machu",
   },
   {
     id: 4,
-    image: "or.png",
+    imgSrc: "/assets/or.png",
+    altText: "or",
   },
   {
     id: 5,
-    image: "ANLUVET.png",
+    imgSrc: "/assets/ANLUVET.png",
+    altText: "ANLUVET",
   },
   {
     id: 6,
-    image: "rojas.png",
+    imgSrc: "/assets/rojas.png",
+    altText: "rojas",
   },
   {
     id: 7,
-    image: "barco.png",
+    imgSrc: "/assets/barco.png",
+    altText: "barco",
   },
   {
     id: 8,
-    image: "omega.png",
+    imgSrc: "/assets/omega.png",
+    altText: "omega",
   },
   {
     id: 9,
-    image: "organica.png",
+    imgSrc: "/assets/organica.png",
+    altText: "organica",
   },
   {
     id: 10,
-    image: "natural.png",
+    imgSrc: "/assets/natural.png",
+    altText: "natural",
   },
 ];
