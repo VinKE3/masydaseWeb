@@ -167,8 +167,8 @@ export function About() {
           />
         </Card>
       </div> */}
-      <div className="flex gap-10 mt-10">
-        <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-7xl mx-auto p-4">
+        <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto relative h-[30rem]">
           <EvervaultCard text="Misión " />
 
           <h2 className="dark:text-white text-black mt-4 text-lg font-light">
