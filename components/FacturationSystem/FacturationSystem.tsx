@@ -4,6 +4,8 @@ import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { CardBody, CardContainer, CardItem } from "@/components/3dCard/3d-card";
+import Image from "next/image";
 
 export function FacturationSystem() {
   const { theme } = useTheme();
@@ -48,62 +50,101 @@ export function FacturationSystem() {
             </Reveal>
           </div>
         </div>
+
         <MotionTransition>
-          <section className="grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-20 md:gap-40">
-            <article
-              className="mx-auto max-w-sm shadow-xl bg-cover bg-center transform duration-500 hover:-translate-y-2 cursor-pointer group"
-              style={{
-                backgroundImage: "url(/assets/erp.jpg)",
-              }}
-            >
-              <div className="bg-black bg-opacity-60 min-h-150 px-10 flex flex-wrap flex-col pt-64 hover:bg-opacity-80 transform duration-300">
-                <h1 className="text-white dark:bg-blueLight degradedBlue font-bold text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
-                  Sistema de Integración
-                  <br />
-                  ERP
-                </h1>
-                <div className="w-16 h-2 bg-primary dark:bg-secondary rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300"></div>
-                <p className="opacity-0 mb-5 text-white text-xl group-hover:opacity-80 transform duration-500">
+          <section className="grid lg:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-10 md:gap-40">
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                >
+                  Sistema de Integración ERP
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                >
                   Para empresas con sistema de facturación que quieran potenciar
                   sus procesos de emisión de comprobantes electrónicos.
-                </p>
-              </div>
-            </article>
-            <article
-              className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group"
-              style={{
-                backgroundImage: "url(/assets/sistema.jpg)",
-              }}
-            >
-              <div className="bg-black bg-opacity-60 min-h-150 px-10 flex flex-wrap flex-col pt-64  hover:bg-opacity-80 transform duration-300 ">
-                <h1 className="text-white dark:bg-blueLight degradedBlue font-bold text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                </CardItem>
+                <CardItem
+                  translateZ="100"
+                  rotateX={20}
+                  rotateZ={-10}
+                  className="w-full mt-4"
+                >
+                  <Image
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                >
                   Sistema de Facturación Electrónica Web
-                </h1>
-                <div className="w-16 h-2 bg-primary dark:bg-secondary rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300"></div>
-                <p className="opacity-0 mb-5 text-white text-xl group-hover:opacity-80 transform duration-500">
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                >
                   Para empresas que no tienen sistema de facturación, tenemos la
                   solución perfecta que se adapta a sus necesidades.
-                </p>
-              </div>
-            </article>
-            <article
-              className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group"
-              style={{
-                backgroundImage: "url(/assets/gestion.jpg)",
-              }}
-            >
-              <div className="bg-black bg-opacity-60 min-h-150 px-10 flex flex-wrap flex-col pt-64  hover:bg-opacity-80 transform duration-300">
-                <h1 className="text-white dark:bg-blueLight degradedBlue font-bold text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
-                  Sistema de <br /> Gestión <br /> Comercial
-                </h1>
-                <div className="w-16 h-2 bg-primary dark:bg-secondary rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300"></div>
-                <p className="opacity-0 mb-5 text-white text-xl group-hover:opacity-80 transform duration-500">
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                >
+                  Sistema de Gestión Comercial
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                >
                   Para empresas que quieran agilizar sus procesos de gestión de
                   ventas, de forma rápida y eficiente con un sistema de fácil
                   manejo.
-                </p>
-              </div>
-            </article>
+                </CardItem>
+                <CardItem
+                  translateZ="100"
+                  rotateX={20}
+                  rotateZ={10}
+                  className="w-full mt-4"
+                >
+                  <Image
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           </section>
         </MotionTransition>
       </section>
