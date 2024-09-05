@@ -6,19 +6,20 @@ import { DesarrolloWeb } from "@/components/DesarrlloWeb";
 import { ServiciosDesarrolloWeb } from "@/components/DesarrlloWeb/ServiciosDesarrolloWeb";
 import { FacturationSystem } from "@/components/FacturationSystem";
 import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import Header2 from "@/components/Header/Header2";
 import ParticleRing from "@/components/ParticleRing/ParticleRing";
 import { Partners } from "@/components/Partners";
 import { Plans } from "@/components/Plans";
 import { Separator } from "@/components/Separator/separatos";
 import { Services } from "@/components/Services";
+import MainHeader from "@/components/Header/MainHeader";
 
 export default function Home() {
   return (
     <>
-      <Header2 />
-      <ParticleRing />
+      <MainHeader />
+      <div className="py-20">
+        <ParticleRing />
+      </div>
       <About />
       <Separator />
       <FacturationSystem />

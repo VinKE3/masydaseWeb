@@ -1,36 +1,36 @@
+import { FaHome, FaInfoCircle, FaPhone, FaChevronDown } from "react-icons/fa";
 export const dataHeader = [
   {
     id: 1,
     name: "Nosotros",
-    idLink: "#about",
+    idLink: "#nosotros",
+    icon: FaInfoCircle,
   },
   {
     id: 2,
     name: "F. Electronica",
     idLink: "#facturacion",
-  },
-  {
-    id: 3,
-    name: "Planes",
-    idLink: "#plans",
+    subElements: [
+      { name: "Que ofrecemos", idLink: "#que-ofrecemos" },
+      { name: "Beneficios", idLink: "#beneficios" },
+      { name: "Planes", idLink: "#planes" },
+    ],
+    icon: FaInfoCircle,
   },
   {
     id: 4,
     name: "Servicios",
-    idLink: "#services",
+    idLink: "#servicios",
     subElements: [
-      { name: "Sub elemento 1", idLink: "/sub1" },
+      { name: "Desarrollo Web", idLink: "#desarrollo-web" },
       { name: "Sub elemento 2", idLink: "/sub2" },
     ],
-  },
-  {
-    id: 5,
-    name: "Desarrollo Web",
-    idLink: "#desarrollo",
+    icon: FaPhone,
   },
   {
     id: 6,
     name: "Contacto",
-    idLink: "#contact",
+    idLink: "#contacto",
+    icon: FaPhone,
   },
 ];

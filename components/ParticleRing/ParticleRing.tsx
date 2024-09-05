@@ -13,7 +13,7 @@ const ParticleRing = () => {
           position: [10, -17.5, -15],
         }}
         style={{ height: "100vh", width: "100%" }}
-        className="bg-zinc-50 dark:bg-black"
+        className="bg-white dark:bg-black"
       >
         <OrbitControls maxDistance={20} minDistance={10} />
         <directionalLight />
@@ -40,7 +40,7 @@ const ParticleRing = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full dark:bg-white bg-sky-600 mb-1"
+              className="w-3 h-3 rounded-full dark:bg-white bg-primary/80  mb-1"
             />
           </div>
         </a>

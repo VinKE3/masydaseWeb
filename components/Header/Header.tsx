@@ -1,81 +1,100 @@
 "use client";
-
-import Image from "next/image";
-import Link from "next/link";
-import { RiMenu3Line } from "react-icons/ri";
-import { dataHeader } from "./Header.data";
-import { useEffect, useState } from "react";
-import { MotionTransition } from "../MotionTransition/";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import ThemeSwitcherBtn from "../ThemeSwitcher";
+import Link from "next/link";
+import { dataHeader } from "./Header.data";
+import { FaChevronDown } from "react-icons/fa";
 
-export function Header() {
-  const [openMobileMenu, setOpenMobileMenu] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+export default function Header() {
+  const [openMenu, setOpenMenu] = useState<number | null>(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
-      setIsScrolled(isScrolled);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const toggleSubMenu = (menuId: number) => {
+    setOpenMenu(openMenu === menuId ? null : menuId);
+  };
+
+  const menuVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.2 } },
+  };
+
   return (
-    <MotionTransition>
-      <nav
-        className={`flex flex-wrap items-center justify-between max-w-7xl p-4 mx-auto ${
-          isScrolled ? "py-4" : "py-8"
-        } fixed w-full z-50 left-0 right-0 ${
-          isScrolled ? "bg-slate-50 dark:bg-black" : ""
-        }`}
-      >
-        <Link href="/" className="flex items-center">
-          {/* <Image
-            src="/assets/logo2.png"
-            width={150}
-            height={40}
-            alt="Logo MasyDase"
-          /> */}
-          <img
-            src="/assets/logo2.png"
-            alt="Logo MasyDase"
-            className="w-40 h-10"
-          />
-        </Link>
-        <RiMenu3Line
-          className="block text-3xl md:hidden cursor-pointer"
-          onClick={() => setOpenMobileMenu(!openMobileMenu)}
-        />
-        <div
-          className={`${
-            openMobileMenu
-              ? "block dark:bg-black mt-4 bg-slate-50 rounded-xl"
-              : "hidden"
-          } w-full md:block md:w-auto`}
-        >
-          <div className="flex flex-col p-4 mt-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
-            {dataHeader.map(({ id, name, idLink }) => (
-              <div
-                key={id}
-                className="px-4 transition-all duration-500 ease-in-out"
-              >
+    <motion.header
+      className="fixed w-full top-0 z-50 bg-white dark:bg-black shadow-md"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ type: "spring", stiffness: 100 }}
+    >
+      <nav className="max-w-7xl mx-auto flex items-center justify-between p-6">
+        {/* Logo */}
+        <div className="flex-shrink-0">
+          <Link href="/">
+            <img
+              src="/assets/logo2.png"
+              alt="Logo MasyDase"
+              className="w-32 h-auto"
+            />
+          </Link>
+        </div>
+
+        {/* Navbar */}
+        <div className="flex space-x-8">
+          {dataHeader.map((menuItem) => (
+            <div key={menuItem.id} className="relative">
+              {menuItem.subElements ? (
+                <>
+                  <button
+                    onClick={() => toggleSubMenu(menuItem.id)}
+                    className="text-lg font-bold hover:text-azul dark:hover:text-secondary text-grayDark dark:text-white flex items-center"
+                  >
+                    {/* Icono */}
+                    <menuItem.icon className="inline-block mr-2" />{" "}
+                    {menuItem.name}
+                    <FaChevronDown className="ml-1" />
+                  </button>
+
+                  <AnimatePresence>
+                    {openMenu === menuItem.id && (
+                      <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        exit="exit"
+                        variants={menuVariants}
+                        className="absolute left-0 mt-2 w-40 bg-white dark:bg-black shadow-lg rounded-lg"
+                      >
+                        {menuItem.subElements.map((subItem) => (
+                          <Link
+                            key={subItem.name}
+                            href={subItem.idLink}
+                            className="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </>
+              ) : (
                 <Link
-                  href={idLink}
-                  className="text-lg hover:text-azul dark:hover:text-secondary text-grayDark dark:text-white"
-                  onClick={() => setOpenMobileMenu(false)}
+                  href={menuItem.idLink}
+                  className="text-lg font-bold hover:text-azul dark:hover:text-secondary text-grayDark dark:text-white flex items-center"
                 >
-                  {name}
+                  {/* Icono */}
+                  <menuItem.icon className="inline-block mr-2" />{" "}
+                  {menuItem.name}
                 </Link>
-              </div>
-            ))}
-            <div className="px-4 py-2 md:px-0 md:py-0">
-              <ThemeSwitcherBtn setOcultar={() => setOpenMobileMenu(false)} />
+              )}
             </div>
-          </div>
+          ))}
+        </div>
+
+        {/* Theme Switcher */}
+        <div className="px-4 py-2 md:px-0 md:py-0">
+          <ThemeSwitcherBtn />
         </div>
       </nav>
-    </MotionTransition>
+    </motion.header>
   );
 }
