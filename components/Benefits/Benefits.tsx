@@ -6,6 +6,7 @@ import { Reveal } from "../Reveal";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { dataBenefits } from "./Benefits.data";
+import { PinContainer } from "../3dPin/3d-pin";
 
 export default function Benefits() {
   const { theme } = useTheme();
@@ -67,6 +68,24 @@ export default function Benefits() {
               </MotionTransition>
             </div>
           </div>
+        </div>
+        <div className="h-[30rem] w-full flex items-center justify-center ">
+          <PinContainer title="Ver Planes" href="#planes">
+            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                Seguridad y Confiabilidad
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  Nos preocupamos por la seguridad de tu información, espor eso
+                  que nuestro sistema se respalda de manera automática. Nos
+                  preocupamos por la seguridad de tu información, espor eso que
+                  nuestro sistema se respalda de manera automática.
+                </span>
+              </div>
+              <div className="flex flex-1 w-full h-[10px] rounded-lg mt-4 transition-all duration-1000 dark:bg-cyan-600 dark:hover:bg-cyan-800 bg-white hover:bg-azul  hover:shadow-xl" />
+            </div>
+          </PinContainer>
         </div>
       </div>
     </>

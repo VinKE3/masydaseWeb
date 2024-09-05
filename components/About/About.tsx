@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { BackgroundBeamsWithCollision } from "../BackgroundBeamsCollision/background-beams-with-collision";
 import { dataAbout } from "./About.data";
 import { Meteors } from "../Meteors/meteors";
+import { Button } from "../MovingBorder/moving-border";
 
 export function About() {
   const { theme } = useTheme();
@@ -24,7 +25,7 @@ export function About() {
   return (
     <div
       className={`${isDark ? "" : "bg-slate-100"} relative px-6 py-20 md:py-24`}
-      id="about"
+      id="nosotros"
     >
       {isDark && <BackgroundRadialLeft />}
       <BackgroundBeamsWithCollision>
@@ -50,11 +51,10 @@ export function About() {
         </Reveal>
         <Reveal>
           <div className="my-8">
-            <Link
-              href="#plans"
-              className="px-4 py-3 rounded-md bg-primary text-white hover:bg-azul dark:bg-blueRadial"
-            >
-              Elige tu plan
+            <Link href="#plans">
+              <Button borderRadius="1.75rem" className=" ">
+                Contáctanos para saber mas
+              </Button>
             </Link>
           </div>
         </Reveal>
