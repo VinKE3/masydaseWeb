@@ -22,8 +22,9 @@ export const dataHeader = [
     name: "Servicios",
     idLink: "#servicios",
     subElements: [
+      { name: "Sistemas corporativos", idLink: "#sistemas-corporativos" },
       { name: "Desarrollo Web", idLink: "#desarrollo-web" },
-      { name: "Sub elemento 2", idLink: "/sub2" },
+      { name: "Outsorcing Contable", idLink: "#outsorcing-contable" },
     ],
     icon: FaPhone,
   },

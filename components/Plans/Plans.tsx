@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { BackgroundRadialRight } from "../BackgroundRadialRight";
 import { Reveal } from "../Reveal";
+import { Button } from "../MovingBorder/moving-border";
 
 export function Plans() {
   const { theme } = useTheme();
@@ -55,13 +56,13 @@ export function Plans() {
                       Hasta 400 comprabantes al mes
                     </span>
                     <h2 className="text-3xl md:text-4xl from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul dark:bg-blueRadial degradedBlue font-medium flex items-center justify-center leading-none mb-2 mt-6">
-                      S/69.90
+                      S/82.48
                       <span className="from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue text-base ml-1">
                         /Mes
                       </span>
                     </h2>
                     <h5 className="text-grayDark underline dark:text-white text-xs">
-                      No Incluye IGV
+                      Incluye IGV
                     </h5>
                   </div>
                   <h1 className="text-center h-12 flex items-center justify-center">
@@ -218,22 +219,10 @@ export function Plans() {
             </div>
           </section>
           <div className="flex items-center justify-center h-full">
-            <Link
-              href="#contact"
-              className="flex items-center justify-center mt-auto bg-primary hover:bg-azul  text-white dark:bg-blueRadial border-0 py-2 px-4 focus:outline-none rounded"
-            >
-              Consulta por tu plan
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-4 h-4 ml-auto"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
+            <Link href="#contact">
+              <Button borderRadius="1.75rem" className=" ">
+                Consulta por tu plan
+              </Button>
             </Link>
           </div>
         </MotionTransition>

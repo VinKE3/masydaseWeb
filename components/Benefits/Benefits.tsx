@@ -22,7 +22,10 @@ export default function Benefits() {
   }
   return (
     <>
-      <div className={`${isDark ? "" : "bg-slate-100"} relative px-6 py-20 `}>
+      <div
+        id="beneficios"
+        className={`${isDark ? "" : "bg-slate-100"} relative px-6 py-20 `}
+      >
         {isDark && <BackgroundRadialLeft />}
         <div className="block relative bg-opacity-50 z-40">
           <div className="relative mx-auto h-full px-4 pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
@@ -48,7 +51,10 @@ export default function Benefits() {
                 <div className="grid grid-cols-1 gap-2 mt-12  md:grid-cols-2 lg:grid-cols-3 lg:mt-20">
                   {dataBenefits.map(({ id, title, description }) => {
                     return (
-                      <div className="h-[30rem] w-full flex items-center justify-center ">
+                      <div
+                        key={id}
+                        className="h-[30rem] w-full flex items-center justify-center "
+                      >
                         <PinContainer title="Ver Planes" href="#planes">
                           <div
                             key={id}
