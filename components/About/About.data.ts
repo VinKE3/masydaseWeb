@@ -18,6 +18,6 @@ export const dataAbout: AboutData = [
     id: 3,
     title: "Valores",
     description:
-      "RNuestros valores fundamentales son la responsabilidad, honestidad y respeto, principios que guían nuestro compromiso hacia la excelencia y la integridad en cada solución que brindamos a nuestros clientes.",
+      "Nuestros valores fundamentales son la responsabilidad, honestidad y respeto, principios que guían nuestro compromiso hacia la excelencia y la integridad en cada solución que brindamos a nuestros clientes.",
   },
 ];

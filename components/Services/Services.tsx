@@ -23,7 +23,7 @@ export function Services() {
     return null;
   }
   return (
-    <div className="relative p-4 py-20 md:py-64" id="services">
+    <div className="relative p-4 py-20 md:py-20" id="services">
       {isDark && <BackgroundRadialRight />}
       <div className="p-2 mx-auto mb-0 text-center lg:mb-4">
         <div className="flex justify-center">

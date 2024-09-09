@@ -22,7 +22,7 @@ export function ChooseYourCards() {
     {
       title: "E-MasyComercial",
       description:
-        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+        "Te ayuda a resolver la gestión de pedidos, ágil relación con tus clientes y simplifcar el proceso de facturaciónTe ayudo a agilizar los procesos logísticos de compra-venta, con módulos de almacenamiento y facturación electrónica.",
       content: (
         <Image
           src="/assets/card1.png"
@@ -34,9 +34,9 @@ export function ChooseYourCards() {
       ),
     },
     {
-      title: "Real time changes",
+      title: "E-MasyFarma",
       description:
-        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+        "Te ayuda a controlar el inventario de los fármacos, mejorar el proceso de compra-venta y facturación electrónica.Te ayudo a agilizar los procesos logísticos de compra-venta, con módulos de almacenamiento y facturación electrónica.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
@@ -50,9 +50,9 @@ export function ChooseYourCards() {
       ),
     },
     {
-      title: "Version control",
+      title: "E-MasyMarket",
       description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "Te ayudo a agilizar los procesos logísticos de compra-venta, con módulos de almacenamiento y facturación electrónica.Te ayudo a agilizar los procesos logísticos de compra-venta, con módulos de almacenamiento y facturación electrónica.",
       content: (
         <Image
           src="/assets/card3.png"
@@ -64,9 +64,9 @@ export function ChooseYourCards() {
       ),
     },
     {
-      title: "Running out of content",
+      title: "Version control",
       description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "Te ayudo a agilizar los procesos logísticos de compra-venta, con módulos de almacenamiento y facturación electrónica. Te ayudo a agilizar los procesos logísticos de compra-venta, con módulos de almacenamiento y facturación electrónica.",
       content: (
         <Image
           src="/assets/card4.png"
@@ -88,20 +88,28 @@ export function ChooseYourCards() {
 
   return (
     <div
-      className={`${isDark ? "" : "bg-slate-100"} relative px-6 py-20 md:py-64`}
+      className={`${isDark ? "" : "bg-slate-100"} relative px-6 py-20 md:py-40`}
       id="tarjetas"
     >
       {isDark && <BackgroundRadialLeft />}
-      <div className="block max-w-7xl mx-auto md:grid md:grid-cols-2">
-        <Reveal>
-          <h2 className="text-4xl md:text-5xl font-semibold text-grayDark dark:text-white">
-            Elige el sistema Coorporativo
-            <span className="block degradedBlue dark:bg-blueLight text-azul">
-              que se adapte mejor a tus necesidades
-            </span>
-          </h2>
-        </Reveal>
-        <div className="px-5 mt-6 md:mt-0">
+      <div className="max-w-7xl mx-auto">
+        <div className="p-2 mx-auto mb-0 text-center lg:mb-4">
+          <div className="flex justify-center">
+            <Reveal>
+              <h1 className="mb-4 py-2 text-4xl md:text-5xl font-bold from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
+                Sistemas Coorporativos
+              </h1>
+            </Reveal>
+          </div>
+          <div className="flex justify-center">
+            <Reveal>
+              <p className="mb-5 font-semibold text-grayDark dark:bg-blueLight degradedBlue sm:text-xl">
+                Elige el que mejor se adapte a tus necesidades
+              </p>
+            </Reveal>
+          </div>
+        </div>
+        {/* <div className="px-5 mt-6 md:mt-0">
           <MotionTransition>
             <Swiper
               effect={"cards"}
@@ -111,15 +119,14 @@ export function ChooseYourCards() {
             >
               {dataCards.map(({ image, id }) => (
                 <SwiperSlide key={id}>
-                  {/* <Image src={image} alt="Card" width="400" height="300" /> */}
                   <img src={image} alt="Card" className="w-full h-full" />
                 </SwiperSlide>
               ))}
             </Swiper>
           </MotionTransition>
-        </div>
+        </div> */}
       </div>
-      <div className="max-w-7xl mx-auto p-1">
+      <div className="max-w-7xl mx-auto">
         <StickyScroll content={content} />
       </div>
     </div>

@@ -46,7 +46,7 @@ export default function Header() {
                 <>
                   <button
                     onClick={() => toggleSubMenu(menuItem.id)}
-                    className="text-lg font-bold hover:text-azul dark:hover:text-secondary text-grayDark dark:text-white flex items-center"
+                    className="text-lg font-semibold hover:text-azul dark:hover:text-secondary text-grayDark dark:text-white flex items-center"
                   >
                     {/* Icono */}
                     <menuItem.icon className="inline-block mr-2" />{" "}

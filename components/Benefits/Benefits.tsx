@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { dataBenefits } from "./Benefits.data";
 import { PinContainer } from "../3dPin/3d-pin";
-
+import { BackgroundLines } from "@/components/BackgroundLinesCard/background-lines";
 export default function Benefits() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
@@ -47,7 +47,7 @@ export default function Benefits() {
                   </Reveal>
                 </div>
               </div>
-              <MotionTransition>
+              {/* <MotionTransition>
                 <div className="grid grid-cols-1 gap-2 mt-12  md:grid-cols-2 lg:grid-cols-3 lg:mt-20">
                   {dataBenefits.map(({ id, title, description }) => {
                     return (
@@ -72,6 +72,27 @@ export default function Benefits() {
                           </div>
                         </PinContainer>
                       </div>
+                    );
+                  })}
+                </div>
+              </MotionTransition> */}
+              <MotionTransition>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                  {dataBenefits.map(({ id, title, description }) => {
+                    return (
+                      <>
+                        <BackgroundLines
+                          key={id}
+                          className="flex items-center justify-center w-full flex-col px-4 transition-all duration-1000  bg-white hover:bg-slate-100  hover:shadow-xl m-2 p-4 relative z-40 group"
+                        >
+                          <h2 className="bg-clip-text text-xl  text-center text-grayDark  dark:text-white py-2 md:py-10 relative z-20 font-bold tracking-tight">
+                            {title}
+                          </h2>
+                          <p className="max-w-xl mx-auto text-sm text-grayDark dark:text-white  text-center">
+                            {description}
+                          </p>
+                        </BackgroundLines>
+                      </>
                     );
                   })}
                 </div>

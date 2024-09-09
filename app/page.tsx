@@ -21,11 +21,11 @@ export default function Home() {
         <ParticleRing />
       </div>
       <About />
-      <Separator />
+      {/* <Separator /> */}
       <FacturationSystem />
       <Benefits />
       <Plans />
-      <Separator />
+      {/* <Separator /> */}
       <ChooseYourCards />
       <Services />
       <DesarrolloWeb />

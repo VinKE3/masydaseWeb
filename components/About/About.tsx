@@ -53,7 +53,7 @@ export function About() {
           <div className="my-8">
             <Link href="#plans">
               <Button borderRadius="1.75rem" className=" ">
-                Contáctanos para saber mas
+                Contáctanos
               </Button>
             </Link>
           </div>
