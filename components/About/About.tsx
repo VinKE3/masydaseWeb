@@ -9,6 +9,7 @@ import { BackgroundBeamsWithCollision } from "../BackgroundBeamsCollision/backgr
 import { dataAbout } from "./About.data";
 import { Meteors } from "../Meteors/meteors";
 import { Button } from "../MovingBorder/moving-border";
+import ThemeSwitcherBtn from "../ThemeSwitcher";
 
 export function About() {
   const { theme } = useTheme();
@@ -28,19 +29,14 @@ export function About() {
       id="nosotros"
     >
       {isDark && <BackgroundRadialLeft />}
-      <BackgroundBeamsWithCollision>
-        <h2 className="text-2xl relative z-20 md:text-4xl lg:text-6xl font-bold text-center text-grayDark dark:text-white font-sans tracking-tight">
-          Tienes un problema?{" "}
-          <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-            <div className="absolute left-0 top-[1px] bg-clip-text text-transparent py-4 font-bold from-primary to-azul bg-gradient-to-r text-azul block dark:bg-blueLight  [text-shadow:0_0_rgba(0,0,0,0.1)]">
-              <span className="px-1">Encontramos la mejor solución.</span>
-            </div>
-            <div className="relative bg-clip-text text-transparent py-4 font-bold from-primary to-azul bg-gradient-to-r text-azul block dark:bg-blueLight ">
-              <span className="px-1">Encontramos la mejor solución.</span>
-            </div>
-          </div>
-        </h2>
-      </BackgroundBeamsWithCollision>
+
+      <div className="flex justify-center">
+        <Reveal>
+          <h1 className="mb-4 text-4xl md:text-5xl font-bold from-primary to-azul bg-gradient-to-r bg-clip-text text-transparent text-azul block dark:bg-blueRadial degradedBlue">
+            Tienes un problema? Encontramos la mejor Solución.
+          </h1>
+        </Reveal>
+      </div>
       <div className="flex flex-col items-center text-center mt-10">
         <Reveal>
           <p className="max-w-md mt-0 dark:text-primaryDark text-grayDark md:text-xl">
@@ -49,6 +45,7 @@ export function About() {
             más de 1500 empresas nacionales, desde 1998.
           </p>
         </Reveal>
+        <ThemeSwitcherBtn />{" "}
         <Reveal>
           <div className="my-8">
             <Link href="#plans">

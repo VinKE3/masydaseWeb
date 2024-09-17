@@ -26,7 +26,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
     >
-      <nav className="max-w-7xl mx-auto flex items-center justify-between p-6">
+      <nav className="max-w-full mx-auto flex items-center justify-between p-6 px-60">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">

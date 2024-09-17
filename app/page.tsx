@@ -16,7 +16,6 @@ import MainHeader from "@/components/Header/MainHeader";
 export default function Home() {
   return (
     <>
-      <MainHeader />
       <div className="py-20">
         <ParticleRing />
       </div>
@@ -32,7 +31,6 @@ export default function Home() {
       <ServiciosDesarrolloWeb />
       <Partners />
       <Contact />
-      <Footer />
     </>
   );
 }

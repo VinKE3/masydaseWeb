@@ -1,7 +1,7 @@
 import React from "react";
 
-const page = () => {
+const OutsorcingContablePage = () => {
   return <div>Outsorcing Contable</div>;
 };
 
-export default page;
+export default OutsorcingContablePage;
