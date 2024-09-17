@@ -45,7 +45,6 @@ export function About() {
             más de 1500 empresas nacionales, desde 1998.
           </p>
         </Reveal>
-        <ThemeSwitcherBtn />{" "}
         <Reveal>
           <div className="my-8">
             <Link href="#plans">
